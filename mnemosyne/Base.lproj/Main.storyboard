@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4933.6000000000004" y="-505.09745127436287"/>
+            <point key="canvasLocation" x="5207" y="-475"/>
         </scene>
         <!--My Card Pairings-->
         <scene sceneID="9qI-AJ-Ugv">
@@ -108,7 +108,7 @@
                                         <connections>
                                             <outlet property="pao" destination="0PM-76-1as" id="iaJ-Yi-Y5I"/>
                                             <outlet property="pic" destination="Opl-Oh-IBB" id="tSg-Gj-0sb"/>
-                                            <segue destination="UxA-Xo-btP" kind="presentation" id="b6T-m5-Iun"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="0" id="b6T-m5-Iun"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="46v-OU-BdP" userLabel="twoSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -134,6 +134,7 @@
                                         <connections>
                                             <outlet property="pao" destination="6sq-hC-lM9" id="qSW-yv-tq3"/>
                                             <outlet property="pic" destination="TO3-dw-BKf" id="9UX-BE-Kj7"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="1" id="uiN-uA-Teu"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="ANr-9o-hvV" userLabel="threeSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -159,6 +160,7 @@
                                         <connections>
                                             <outlet property="pao" destination="qyQ-n7-rIA" id="ezV-I6-ZJX"/>
                                             <outlet property="pic" destination="Soo-PP-dCv" id="yiQ-xd-s3a"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="2" id="4bS-En-tAQ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="8t8-Vq-uNr" userLabel="fourSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -184,6 +186,7 @@
                                         <connections>
                                             <outlet property="pao" destination="5II-wh-ETF" id="fdj-IB-6dB"/>
                                             <outlet property="pic" destination="AtY-ib-ba2" id="dvR-qj-E40"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="3" id="6UM-Cu-9nG"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="m3u-le-Zqe" userLabel="fiveSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -209,6 +212,7 @@
                                         <connections>
                                             <outlet property="pao" destination="u8F-1c-Qz6" id="nAL-Ud-IEW"/>
                                             <outlet property="pic" destination="giU-H6-ncw" id="neC-6E-jUJ"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="4" id="xB6-hZ-TvV"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="BpR-BX-1ZD" userLabel="sixSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -234,6 +238,7 @@
                                         <connections>
                                             <outlet property="pao" destination="7rr-GG-6ce" id="ZMI-Jl-yPQ"/>
                                             <outlet property="pic" destination="nxi-qq-Dbm" id="5fZ-gC-24h"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="5" id="LgG-Oo-Y5b"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="ulO-cm-MKs" userLabel="sevenSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -259,6 +264,7 @@
                                         <connections>
                                             <outlet property="pao" destination="TRH-LZ-2Ne" id="vbs-Hg-EUS"/>
                                             <outlet property="pic" destination="Jyk-gi-bQA" id="e7b-TX-MOz"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="6" id="43Z-t2-JUq"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="xES-VP-BuQ" userLabel="eightSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -284,6 +290,7 @@
                                         <connections>
                                             <outlet property="pao" destination="znM-Ks-qHX" id="SA3-Bt-Bu7"/>
                                             <outlet property="pic" destination="cWA-ji-ivd" id="6cf-Sx-dNz"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="7" id="vk1-2m-s1P"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="nEY-zt-exO" userLabel="nineSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -309,6 +316,7 @@
                                         <connections>
                                             <outlet property="pao" destination="bgm-eQ-D3I" id="RL1-8B-mVw"/>
                                             <outlet property="pic" destination="XbS-f0-PQ8" id="z0y-F7-jyG"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="8" id="u4X-bp-RFp"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="oYG-VW-3gq" userLabel="tenSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -334,6 +342,7 @@
                                         <connections>
                                             <outlet property="pao" destination="CRp-zw-05I" id="Y0d-ar-Hhg"/>
                                             <outlet property="pic" destination="pdN-au-qMH" id="3PO-SD-Ph8"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="9" id="NR3-TF-wc8"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="21y-CR-VzV" userLabel="jackSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -359,6 +368,7 @@
                                         <connections>
                                             <outlet property="pao" destination="qly-nf-tlp" id="Sr0-L8-rIk"/>
                                             <outlet property="pic" destination="tKT-G5-v7X" id="Vm5-mV-cED"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="10" id="3Vb-lV-ZbD"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="wTe-TB-ySv" userLabel="queenSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -384,6 +394,7 @@
                                         <connections>
                                             <outlet property="pao" destination="IlH-a2-bC0" id="xO3-O1-6fA"/>
                                             <outlet property="pic" destination="thh-1h-3XH" id="1Q1-zm-pC7"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="11" id="tfG-48-ZCZ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardTableViewCell" id="UGa-f8-o7N" userLabel="kingSpades" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -409,6 +420,7 @@
                                         <connections>
                                             <outlet property="pao" destination="lUG-P4-4cK" id="Gm6-Qz-U8G"/>
                                             <outlet property="pic" destination="nmy-J1-AgE" id="7xW-Hx-gq0"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" identifier="12" id="sgT-XD-bb1"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1574,7 +1586,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbk-Mt-aPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="qtE-VD-uIA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="8257" y="-364"/>
+            <point key="canvasLocation" x="7801" y="-475"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="S64-jr-bB3">
@@ -1592,7 +1604,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Faz-lR-2Gm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3994.4000000000001" y="-505.09745127436287"/>
+            <point key="canvasLocation" x="4358" y="-475"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jeP-iq-TMl">
@@ -1610,10 +1622,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMX-Jl-K6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7202" y="-444"/>
+            <point key="canvasLocation" x="7076" y="-475"/>
         </scene>
     </scenes>
     <resources>
         <image name="default" width="72" height="71"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sgT-XD-bb1"/>
+    </inferredMetricsTieBreakers>
 </document>

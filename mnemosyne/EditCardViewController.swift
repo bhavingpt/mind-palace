@@ -13,7 +13,12 @@ class EditCardViewController: UIViewController {
     
     // MARK: Properties
     
-    var card: Card?
+    var currentCard: Int = -1
+    
+    var first_text: String?
+    var second_text: String?
+    var third_text: String?
+    var save_data: Bool = false
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var personTextField: UITextField!
@@ -22,8 +27,7 @@ class EditCardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // TODO init objects??
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,13 +43,14 @@ class EditCardViewController: UIViewController {
         super.prepare(for: segue, sender: sender)
         
         guard let button = sender as? UIBarButtonItem, button === saveButton else {
-            os_log("The save button wasn't pressed, canceling", log: OSLog.default, type: .debug)
+            os_log("Save wasn't pressed", log: OSLog.default, type: .debug)
             return
         }
         
-        os_log("I got your save, will handle in a while", log: OSLog.default, type: .debug)
-        
-        // TODO pass along the information to the controller
+        self.save_data = true
+        self.first_text = personTextField.text
+        self.second_text = actionTextField.text
+        self.third_text = objectTextField.text
     }
 
 }
