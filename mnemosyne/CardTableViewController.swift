@@ -82,9 +82,16 @@ class CardTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
+    
+    @IBAction func unwindToCardList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? EditCardViewController {
+            // TODO DO SHIT with the text fields yo
+        }
+    }
 
+    /*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.

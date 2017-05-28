@@ -106,7 +106,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="DxK-Qp-S7R" kind="show" id="EKy-rA-pn9"/>
+                                            <segue destination="UxA-Xo-btP" kind="presentation" id="b6T-m5-Iun"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qGf-Z3-WQd" customClass="CardTableViewCell" customModule="mnemosyne" customModuleProvider="target">
@@ -370,7 +370,7 @@
             </objects>
             <point key="canvasLocation" x="6063.1999999999998" y="-474.51274362818594"/>
         </scene>
-        <!--Edit Card View Controller-->
+        <!--Edit Card-->
         <scene sceneID="Vtk-MD-gDJ">
             <objects>
                 <viewController id="DxK-Qp-S7R" customClass="EditCardViewController" customModule="mnemosyne" customModuleProvider="target" sceneMemberID="viewController">
@@ -457,10 +457,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Edit Card" id="vAN-bC-34t">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Fk8-Tr-swQ">
+                            <connections>
+                                <segue destination="qtE-VD-uIA" kind="unwind" unwindAction="unwindToCardListWithSender:" id="Ojw-5i-Wvu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="actionTextField" destination="M6v-6B-Pe6" id="7JP-1v-Nvd"/>
+                        <outlet property="objectTextField" destination="GCs-c2-E3V" id="H5T-6a-m9q"/>
+                        <outlet property="personTextField" destination="88B-HB-TnR" id="xnR-9X-P9T"/>
+                        <outlet property="saveButton" destination="Fk8-Tr-swQ" id="B8o-JS-pkj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbk-Mt-aPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="qtE-VD-uIA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="7136.8000000000002" y="-447.52623688155927"/>
+            <point key="canvasLocation" x="8257" y="-364"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="S64-jr-bB3">
@@ -479,6 +493,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Faz-lR-2Gm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3994.4000000000001" y="-505.09745127436287"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jeP-iq-TMl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UxA-Xo-btP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BA9-RS-KA4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DxK-Qp-S7R" kind="relationship" relationship="rootViewController" id="UwU-tB-veU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMX-Jl-K6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7202" y="-444"/>
         </scene>
     </scenes>
     <resources>

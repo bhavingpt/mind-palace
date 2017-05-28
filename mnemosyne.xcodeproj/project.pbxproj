@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F17E3D071EDAA89D0023AE91 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E3D061EDAA89D0023AE91 /* Card.swift */; };
 		F1F5AE1D1EDA2A7C005AC87A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5AE1C1EDA2A7C005AC87A /* AppDelegate.swift */; };
 		F1F5AE1F1EDA2A7C005AC87A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5AE1E1EDA2A7C005AC87A /* ViewController.swift */; };
 		F1F5AE221EDA2A7C005AC87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F5AE201EDA2A7C005AC87A /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F17E3D061EDAA89D0023AE91 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F1F5AE191EDA2A7C005AC87A /* mnemosyne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mnemosyne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F5AE1C1EDA2A7C005AC87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1F5AE1E1EDA2A7C005AC87A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				F1F5AE1E1EDA2A7C005AC87A /* ViewController.swift */,
 				F1F5AE201EDA2A7C005AC87A /* Main.storyboard */,
 				F1F5AE341EDA72B7005AC87A /* EditCardViewController.swift */,
+				F17E3D061EDAA89D0023AE91 /* Card.swift */,
 				F1F5AE321EDA32C1005AC87A /* CardTableViewController.swift */,
 				F1F5AE231EDA2A7C005AC87A /* Assets.xcassets */,
 				F1F5AE2E1EDA2B7D005AC87A /* HomeViewController.swift */,
@@ -154,6 +157,7 @@
 			files = (
 				F1F5AE351EDA72B7005AC87A /* EditCardViewController.swift in Sources */,
 				F1F5AE1F1EDA2A7C005AC87A /* ViewController.swift in Sources */,
+				F17E3D071EDAA89D0023AE91 /* Card.swift in Sources */,
 				F1F5AE1D1EDA2A7C005AC87A /* AppDelegate.swift in Sources */,
 				F1F5AE2F1EDA2B7D005AC87A /* HomeViewController.swift in Sources */,
 				F1F5AE331EDA32C1005AC87A /* CardTableViewController.swift in Sources */,
@@ -319,6 +323,7 @@
 				F1F5AE2D1EDA2A7C005AC87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
