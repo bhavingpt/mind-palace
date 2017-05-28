@@ -15,6 +15,8 @@
 		F1F5AE2F1EDA2B7D005AC87A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5AE2E1EDA2B7D005AC87A /* HomeViewController.swift */; };
 		F1F5AE311EDA3298005AC87A /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5AE301EDA3298005AC87A /* CardTableViewCell.swift */; };
 		F1F5AE331EDA32C1005AC87A /* CardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5AE321EDA32C1005AC87A /* CardTableViewController.swift */; };
+		F1F5AE351EDA72B7005AC87A /* EditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5AE341EDA72B7005AC87A /* EditCardViewController.swift */; };
+		F1F5AE371EDA7B24005AC87A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F5AE361EDA7B24005AC87A /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F1F5AE2E1EDA2B7D005AC87A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F1F5AE301EDA3298005AC87A /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		F1F5AE321EDA32C1005AC87A /* CardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewController.swift; sourceTree = "<group>"; };
+		F1F5AE341EDA72B7005AC87A /* EditCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCardViewController.swift; sourceTree = "<group>"; };
+		F1F5AE361EDA7B24005AC87A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +67,14 @@
 				F1F5AE1C1EDA2A7C005AC87A /* AppDelegate.swift */,
 				F1F5AE1E1EDA2A7C005AC87A /* ViewController.swift */,
 				F1F5AE201EDA2A7C005AC87A /* Main.storyboard */,
+				F1F5AE341EDA72B7005AC87A /* EditCardViewController.swift */,
 				F1F5AE321EDA32C1005AC87A /* CardTableViewController.swift */,
 				F1F5AE231EDA2A7C005AC87A /* Assets.xcassets */,
 				F1F5AE2E1EDA2B7D005AC87A /* HomeViewController.swift */,
 				F1F5AE251EDA2A7C005AC87A /* LaunchScreen.storyboard */,
 				F1F5AE301EDA3298005AC87A /* CardTableViewCell.swift */,
 				F1F5AE281EDA2A7C005AC87A /* Info.plist */,
+				F1F5AE361EDA7B24005AC87A /* Launch Screen.storyboard */,
 			);
 			path = mnemosyne;
 			sourceTree = "<group>";
@@ -134,6 +140,7 @@
 			files = (
 				F1F5AE271EDA2A7C005AC87A /* LaunchScreen.storyboard in Resources */,
 				F1F5AE241EDA2A7C005AC87A /* Assets.xcassets in Resources */,
+				F1F5AE371EDA7B24005AC87A /* Launch Screen.storyboard in Resources */,
 				F1F5AE221EDA2A7C005AC87A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F5AE351EDA72B7005AC87A /* EditCardViewController.swift in Sources */,
 				F1F5AE1F1EDA2A7C005AC87A /* ViewController.swift in Sources */,
 				F1F5AE1D1EDA2A7C005AC87A /* AppDelegate.swift in Sources */,
 				F1F5AE2F1EDA2B7D005AC87A /* HomeViewController.swift in Sources */,
