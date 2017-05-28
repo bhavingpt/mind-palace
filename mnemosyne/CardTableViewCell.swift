@@ -9,7 +9,12 @@
 import UIKit
 
 class CardTableViewCell: UITableViewCell {
-
+    
+    // MARK: Properties
+    
+    @IBOutlet weak var pao: UILabel!
+    @IBOutlet weak var pic: UIImageView!
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

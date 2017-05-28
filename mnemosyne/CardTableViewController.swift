@@ -9,86 +9,56 @@
 import UIKit
 
 class CardTableViewController: UITableViewController {
+    
+    // MARK: Properties
+    
+    var mappings = Array(repeating: "-", count: 468)
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        mappings = loadMappings()
+        displayMappings()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 4
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 13
     }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        guard let cell = self.tableView.dequeueReusableCell(withIdentifier: "CardTableViewCell", for: indexPath) as? CardTableViewCell else {
+            fatalError("The dequeued cell was not of type CardTableViewCell.")
+        }
 
-        // Configure the cell...
-
+        cell.pic.image = #imageLiteral(resourceName: "default")
+        cell.pao.text = "--- | --- | ---"
+        
         return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+    }*/
+    
     
     // MARK: - Navigation
     
     @IBAction func unwindToCardList(sender: UIStoryboardSegue) {
-        if let sourceViewController = sender.source as? EditCardViewController {
-            // TODO DO SHIT with the text fields yo
-        }
+        // TODO check if sender is save or cancel!!
+        // TODO update mappings
+        displayMappings()
+        storeMappings()
     }
 
     /*
@@ -98,5 +68,35 @@ class CardTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: Private funcs
+    
+    private func loadMappings() -> [String] {
+        // TODO load the data
+        return Array(repeating: "---", count: 36)
+    }
+    
+    private func storeMappings() {
+        // TODO store the data
+    }
+    
+    private func displayMappings() {
+        var current: CardTableViewCell
+        for index in 0...51 {
+            current = paos[index]
+            current.pao.text = "hell no \(index)"
+        }
+    }
+    
+    // MARK: PAO Pairings
+   
+    @IBOutlet var paos: [CardTableViewCell]!
+    
+    
+    
+    
+    
+    
+    
 
 }
