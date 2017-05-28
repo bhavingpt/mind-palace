@@ -27,7 +27,15 @@ class EditCardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // TODO init objects??
+        if (first_text != nil) {
+            self.personTextField.text = first_text
+        }
+        if (second_text != nil) {
+            self.actionTextField.text = second_text
+        }
+        if (third_text != nil) {
+            self.objectTextField.text = third_text
+        }
     }
 
     override func didReceiveMemoryWarning() {
