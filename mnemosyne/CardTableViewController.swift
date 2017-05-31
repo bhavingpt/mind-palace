@@ -15,6 +15,8 @@ class CardTableViewController: UITableViewController {
     
     var defaultString: String = "-------"
     
+    let defaults = UserDefaults.standard
+    
     var mappings: [String] = [] {
         didSet {
             displayMappings()
@@ -97,14 +99,11 @@ class CardTableViewController: UITableViewController {
     // MARK: Private funcs
     
     private func loadMappings() {
-        // TODO load the data
-        if mappings == [] {
-            mappings = Array(repeating: defaultString, count: 468)
-        }
+        mappings = defaults.object(forKey: "pao") as? [String] ?? Array(repeating: defaultString, count: 156)
     }
     
     private func storeMappings() {
-        // TODO store the data
+        defaults.set(self.mappings, forKey: "pao")
     }
     
     private func displayMappings() {
