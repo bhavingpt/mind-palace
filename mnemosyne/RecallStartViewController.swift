@@ -94,8 +94,15 @@ class RecallStartViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let nav = segue.destination as? UINavigationController {
+            if let dest = nav.viewControllers[0] as? RecallTestViewController {
+                dest.spadesOn = spades.isOn
+                dest.clubsOn = clubs.isOn
+                dest.diamondsOn = diamonds.isOn
+                dest.heartsOn = hearts.isOn
+            }
+        }
+        
     }
 
 }

@@ -9,11 +9,32 @@
 import UIKit
 
 class RecallTestViewController: UIViewController {
+    
+    let defaults = UserDefaults.standard
+    
+    var mapping = [String]()
+    
+    // MARK: Passed Properties
+    
+    var spadesOn = false
+    var clubsOn = false
+    var diamondsOn = false
+    var heartsOn = false
+    
+    // MARK: Properties
+    
+    @IBOutlet weak var number: UILabel!
+    @IBOutlet weak var card: UIImageView!
+    @IBOutlet weak var choiceA: UIButton!
+    @IBOutlet weak var choiceB: UIButton!
+    @IBOutlet weak var choiceC: UIButton!
+    @IBOutlet weak var choiceD: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.mapping = (defaults.object(forKey: "pao") as? [String])!
+        
+        // TODO handle the Quit button and unwindToRecallScreenWithSender(_:)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +42,12 @@ class RecallTestViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    // MARK: Actions
+    
+    @IBAction func selection(_ sender: UIButton) {
+        print ("your selection has not been recorded")
+    }
+    
     /*
     // MARK: - Navigation
 
