@@ -55,6 +55,8 @@ class RecallStartViewController: UIViewController {
             }
         }
         
+        start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
+        
     }
 
     override func viewDidLoad() {
