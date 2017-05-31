@@ -69,7 +69,26 @@ class RecallStartViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: Actions
+    
+    @IBAction func spadesChanged(_ sender: UISwitch) {
+        start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
+    }
+    
+    @IBAction func diamondsChanged(_ sender: UISwitch) {
+        start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
 
+    }
+    
+    @IBAction func heartsChanged(_ sender: UISwitch) {
+        start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
+
+    }
+    
+    @IBAction func clubsChanged(_ sender: UISwitch) {
+        start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
+    }
+    
     
     // MARK: - Navigation
 
