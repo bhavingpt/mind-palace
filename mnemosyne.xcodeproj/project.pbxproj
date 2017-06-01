@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F16816291EDD35670022F191 /* RecallStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16816281EDD35670022F191 /* RecallStartViewController.swift */; };
 		F168162B1EDD39BD0022F191 /* RecallTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F168162A1EDD39BD0022F191 /* RecallTestViewController.swift */; };
+		F1EB7C2D1EDFEBF9003A194E /* EncodingStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB7C2C1EDFEBF9003A194E /* EncodingStartViewController.swift */; };
+		F1EB7C2F1EDFEC42003A194E /* EncodingTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB7C2E1EDFEC42003A194E /* EncodingTestViewController.swift */; };
 		F1F5AE1D1EDA2A7C005AC87A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5AE1C1EDA2A7C005AC87A /* AppDelegate.swift */; };
 		F1F5AE1F1EDA2A7C005AC87A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5AE1E1EDA2A7C005AC87A /* ViewController.swift */; };
 		F1F5AE221EDA2A7C005AC87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F5AE201EDA2A7C005AC87A /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		F16816281EDD35670022F191 /* RecallStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecallStartViewController.swift; sourceTree = "<group>"; };
 		F168162A1EDD39BD0022F191 /* RecallTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecallTestViewController.swift; sourceTree = "<group>"; };
+		F1EB7C2C1EDFEBF9003A194E /* EncodingStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingStartViewController.swift; sourceTree = "<group>"; };
+		F1EB7C2E1EDFEC42003A194E /* EncodingTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingTestViewController.swift; sourceTree = "<group>"; };
 		F1F5AE191EDA2A7C005AC87A /* mnemosyne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mnemosyne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F5AE1C1EDA2A7C005AC87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1F5AE1E1EDA2A7C005AC87A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,11 +72,13 @@
 		F1F5AE1B1EDA2A7C005AC87A /* mnemosyne */ = {
 			isa = PBXGroup;
 			children = (
+				F1EB7C2C1EDFEBF9003A194E /* EncodingStartViewController.swift */,
 				F168162A1EDD39BD0022F191 /* RecallTestViewController.swift */,
 				F16816281EDD35670022F191 /* RecallStartViewController.swift */,
 				F1F5AE1C1EDA2A7C005AC87A /* AppDelegate.swift */,
 				F1F5AE1E1EDA2A7C005AC87A /* ViewController.swift */,
 				F1F5AE201EDA2A7C005AC87A /* Main.storyboard */,
+				F1EB7C2E1EDFEC42003A194E /* EncodingTestViewController.swift */,
 				F1F5AE341EDA72B7005AC87A /* EditCardViewController.swift */,
 				F1F5AE321EDA32C1005AC87A /* CardTableViewController.swift */,
 				F1F5AE231EDA2A7C005AC87A /* Assets.xcassets */,
@@ -158,11 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1EB7C2F1EDFEC42003A194E /* EncodingTestViewController.swift in Sources */,
 				F1F5AE351EDA72B7005AC87A /* EditCardViewController.swift in Sources */,
 				F1F5AE1F1EDA2A7C005AC87A /* ViewController.swift in Sources */,
 				F168162B1EDD39BD0022F191 /* RecallTestViewController.swift in Sources */,
 				F16816291EDD35670022F191 /* RecallStartViewController.swift in Sources */,
 				F1F5AE1D1EDA2A7C005AC87A /* AppDelegate.swift in Sources */,
+				F1EB7C2D1EDFEBF9003A194E /* EncodingStartViewController.swift in Sources */,
 				F1F5AE2F1EDA2B7D005AC87A /* HomeViewController.swift in Sources */,
 				F1F5AE331EDA32C1005AC87A /* CardTableViewController.swift in Sources */,
 				F1F5AE311EDA3298005AC87A /* CardTableViewCell.swift in Sources */,
