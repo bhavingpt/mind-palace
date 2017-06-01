@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		F16816281EDD35670022F191 /* RecallStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecallStartViewController.swift; sourceTree = "<group>"; };
-		F168162A1EDD39BD0022F191 /* RecallTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecallTestViewController.swift; path = ../RecallTestViewController.swift; sourceTree = "<group>"; };
+		F168162A1EDD39BD0022F191 /* RecallTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecallTestViewController.swift; sourceTree = "<group>"; };
 		F17E3D061EDAA89D0023AE91 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F1F5AE191EDA2A7C005AC87A /* mnemosyne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mnemosyne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F5AE1C1EDA2A7C005AC87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
