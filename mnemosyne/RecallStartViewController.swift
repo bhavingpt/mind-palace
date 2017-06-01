@@ -104,5 +104,12 @@ class RecallStartViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func unwindToRecallStart(sender: UIStoryboardSegue) {
+        spadesLabel.text = "Spades"
+        diamondsLabel.text = "Diamonds"
+        heartsLabel.text = "Hearts"
+        clubsLabel.text = "Clubs"
+    }
 
 }

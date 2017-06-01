@@ -199,8 +199,8 @@
                                 <rect key="frame" x="81" y="123" width="212" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vls-7c-UTk">
-                                <rect key="frame" x="0.0" y="487" width="375" height="150"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vls-7c-UTk">
+                                <rect key="frame" x="0.0" y="457" width="375" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tux-DW-dOY">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
@@ -210,21 +210,21 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ps-0C-0dl">
-                                        <rect key="frame" x="0.0" y="40" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="selection:" destination="ppl-tD-qR5" eventType="touchUpInside" id="q0E-BN-MNR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOz-ay-kBF">
-                                        <rect key="frame" x="0.0" y="80" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="100" width="375" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="selection:" destination="ppl-tD-qR5" eventType="touchUpInside" id="bVm-1n-ELP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuo-kC-cob">
-                                        <rect key="frame" x="0.0" y="120" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="150" width="375" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="selection:" destination="ppl-tD-qR5" eventType="touchUpInside" id="qsx-iZ-zdb"/>
@@ -232,11 +232,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmx-n1-mQg">
-                                <rect key="frame" x="175" y="72" width="25" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmx-n1-mQg">
+                                <rect key="frame" x="168" y="69" width="38" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbI-gY-7VQ">
+                                <rect key="frame" x="298" y="79" width="77" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -248,18 +255,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JiI-QE-7bN">
-                        <barButtonItem key="leftBarButtonItem" title="Quit" id="VID-Km-MIf"/>
+                        <barButtonItem key="leftBarButtonItem" title="Quit" id="VID-Km-MIf">
+                            <connections>
+                                <segue destination="Rt0-C4-ZqQ" kind="unwind" unwindAction="unwindToRecallStartWithSender:" id="C31-LD-XpU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="card" destination="Wdt-tr-Sk2" id="rbQ-Yp-FOO"/>
                         <outlet property="choiceA" destination="Tux-DW-dOY" id="klc-N4-PYH"/>
                         <outlet property="choiceB" destination="9ps-0C-0dl" id="LjB-kf-Zeb"/>
                         <outlet property="choiceC" destination="qOz-ay-kBF" id="wdL-My-YUS"/>
                         <outlet property="choiceD" destination="vuo-kC-cob" id="NNb-DL-DaB"/>
+                        <outlet property="image" destination="Wdt-tr-Sk2" id="1jN-he-pOj"/>
                         <outlet property="number" destination="Cmx-n1-mQg" id="H4h-35-Xtj"/>
+                        <outlet property="stopwatch" destination="EbI-gY-7VQ" id="w3w-7z-fif"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJQ-fn-iYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Rt0-C4-ZqQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="8020" y="-448.42578710644682"/>
         </scene>
