@@ -204,6 +204,359 @@
                                 <rect key="frame" x="120" y="181" width="212" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wWM-gv-gbe">
+                                <rect key="frame" x="0.0" y="438" width="375" height="160"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jJO-Vo-jAU" id="TK6-Q0-jIM"/>
+                                    <outlet property="delegate" destination="jJO-Vo-jAU" id="Pah-Xb-sX7"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlA-ie-oJq">
+                                <rect key="frame" x="166" y="617" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="guess" destination="jJO-Vo-jAU" eventType="touchUpInside" id="fob-Zb-H2M"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ON3-MX-fZq">
+                                <rect key="frame" x="0.0" y="64" width="118.5" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3W-9Z-3V5" userLabel="1">
+                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9p-1q-HwO" userLabel="2">
+                                        <rect key="frame" x="0.0" y="20" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x80-qL-voZ" userLabel="3">
+                                        <rect key="frame" x="0.0" y="40" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEx-7Y-Feu" userLabel="4">
+                                        <rect key="frame" x="0.0" y="60" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBJ-6d-NHA" userLabel="5">
+                                        <rect key="frame" x="0.0" y="80" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUs-Js-TI2" userLabel="6">
+                                        <rect key="frame" x="0.0" y="100" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwG-AA-d1a" userLabel="7">
+                                        <rect key="frame" x="0.0" y="120" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aG-0J-faN" userLabel="8">
+                                        <rect key="frame" x="0.0" y="140" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buY-AP-fbd" userLabel="9">
+                                        <rect key="frame" x="0.0" y="160" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4as-Wn-7WJ" userLabel="10">
+                                        <rect key="frame" x="0.0" y="180" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgx-Yx-3RQ" userLabel="11">
+                                        <rect key="frame" x="0.0" y="200" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOJ-tP-na0" userLabel="12">
+                                        <rect key="frame" x="0.0" y="220" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha8-Vr-vFH" userLabel="13">
+                                        <rect key="frame" x="0.0" y="240" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSb-MV-xwS" userLabel="14">
+                                        <rect key="frame" x="0.0" y="260" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6j-uR-b6P" userLabel="15">
+                                        <rect key="frame" x="0.0" y="280" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aT3-Jz-adQ" userLabel="16">
+                                        <rect key="frame" x="0.0" y="300" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfW-Ny-345" userLabel="17">
+                                        <rect key="frame" x="0.0" y="320" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKZ-0k-heZ" userLabel="18">
+                                        <rect key="frame" x="0.0" y="340" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ca6-hs-vbF">
+                                <rect key="frame" x="128" y="64" width="118.5" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpQ-PV-cvc" userLabel="19">
+                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2C-5A-4gQ" userLabel="20">
+                                        <rect key="frame" x="0.0" y="20" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVe-gd-tLX" userLabel="21">
+                                        <rect key="frame" x="0.0" y="40" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd6-gD-YXJ" userLabel="22">
+                                        <rect key="frame" x="0.0" y="60" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWO-4n-jtb" userLabel="23">
+                                        <rect key="frame" x="0.0" y="80" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pC-Vq-QbI" userLabel="24">
+                                        <rect key="frame" x="0.0" y="100" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXj-Mf-1ee" userLabel="25">
+                                        <rect key="frame" x="0.0" y="120" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJs-Sf-AAv" userLabel="26">
+                                        <rect key="frame" x="0.0" y="140" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkI-hE-h3h" userLabel="27">
+                                        <rect key="frame" x="0.0" y="160" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eax-Md-Ady" userLabel="28">
+                                        <rect key="frame" x="0.0" y="180" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58g-f4-Dqf" userLabel="29">
+                                        <rect key="frame" x="0.0" y="200" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtf-Wy-ys5" userLabel="30">
+                                        <rect key="frame" x="0.0" y="220" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxC-xz-o2i" userLabel="31">
+                                        <rect key="frame" x="0.0" y="240" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMJ-rG-eIg" userLabel="32">
+                                        <rect key="frame" x="0.0" y="260" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwH-tR-Qrh" userLabel="33">
+                                        <rect key="frame" x="0.0" y="280" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssS-nG-znU" userLabel="34">
+                                        <rect key="frame" x="0.0" y="300" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3p-lB-C2Z" userLabel="35">
+                                        <rect key="frame" x="0.0" y="320" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SG1-T9-kqZ" userLabel="36">
+                                        <rect key="frame" x="0.0" y="340" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="uah-Wi-3Ao">
+                                <rect key="frame" x="256" y="64" width="118.5" height="316"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nj5-nE-SLW" userLabel="37">
+                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBf-Yt-l32" userLabel="38">
+                                        <rect key="frame" x="0.0" y="20" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ku4-bi-ul6" userLabel="39">
+                                        <rect key="frame" x="0.0" y="40" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geM-7i-S4Z" userLabel="40">
+                                        <rect key="frame" x="0.0" y="60" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSY-we-MxT" userLabel="41">
+                                        <rect key="frame" x="0.0" y="80" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRq-HL-16P" userLabel="42">
+                                        <rect key="frame" x="0.0" y="100" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsI-zO-siD" userLabel="43">
+                                        <rect key="frame" x="0.0" y="120" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umd-ZS-FXN" userLabel="44">
+                                        <rect key="frame" x="0.0" y="140" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zof-1p-Ovi" userLabel="45">
+                                        <rect key="frame" x="0.0" y="160" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlG-WJ-h8Q" userLabel="46">
+                                        <rect key="frame" x="0.0" y="180" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tu-XM-1jk" userLabel="47">
+                                        <rect key="frame" x="0.0" y="200" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLh-lY-Igi" userLabel="48">
+                                        <rect key="frame" x="0.0" y="220" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdA-yt-rzf" userLabel="49">
+                                        <rect key="frame" x="0.0" y="240" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pk-5H-ji2" userLabel="50">
+                                        <rect key="frame" x="0.0" y="260" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVy-40-lHa" userLabel="51">
+                                        <rect key="frame" x="0.0" y="280" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vc-a7-Rwi" userLabel="52">
+                                        <rect key="frame" x="0.0" y="300" width="118.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations! You did it!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpc-HZ-KOT">
+                                <rect key="frame" x="84" y="438" width="207" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -215,7 +568,62 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="congrats" destination="Tpc-HZ-KOT" id="qeM-Aj-F5J"/>
                         <outlet property="firstImage" destination="LkG-fQ-L18" id="kLn-It-WlP"/>
+                        <outlet property="guessButton" destination="ZlA-ie-oJq" id="WSm-yI-KWR"/>
+                        <outlet property="label1" destination="K3W-9Z-3V5" id="BF3-ua-GP7"/>
+                        <outlet property="label10" destination="4as-Wn-7WJ" id="VFA-eb-zw9"/>
+                        <outlet property="label11" destination="xgx-Yx-3RQ" id="cKo-I7-LCO"/>
+                        <outlet property="label12" destination="vOJ-tP-na0" id="Rd6-f9-Bra"/>
+                        <outlet property="label13" destination="Ha8-Vr-vFH" id="uH7-Z6-qsI"/>
+                        <outlet property="label14" destination="mSb-MV-xwS" id="iQo-tn-caU"/>
+                        <outlet property="label15" destination="U6j-uR-b6P" id="cms-Sz-qB2"/>
+                        <outlet property="label16" destination="aT3-Jz-adQ" id="bD3-oF-phw"/>
+                        <outlet property="label17" destination="YfW-Ny-345" id="3KL-Fh-QmA"/>
+                        <outlet property="label18" destination="pKZ-0k-heZ" id="3t3-eD-35E"/>
+                        <outlet property="label19" destination="jpQ-PV-cvc" id="yMn-IJ-fwr"/>
+                        <outlet property="label2" destination="v9p-1q-HwO" id="41D-SS-e3t"/>
+                        <outlet property="label20" destination="O2C-5A-4gQ" id="ibG-60-qCJ"/>
+                        <outlet property="label21" destination="AVe-gd-tLX" id="0OG-i4-3GN"/>
+                        <outlet property="label22" destination="hd6-gD-YXJ" id="3ag-10-5V4"/>
+                        <outlet property="label23" destination="oWO-4n-jtb" id="Zk3-hW-X8K"/>
+                        <outlet property="label24" destination="8pC-Vq-QbI" id="bE6-rT-01Q"/>
+                        <outlet property="label25" destination="zXj-Mf-1ee" id="gvP-RF-NC4"/>
+                        <outlet property="label26" destination="FJs-Sf-AAv" id="z7s-HD-kwW"/>
+                        <outlet property="label27" destination="CkI-hE-h3h" id="WA3-MU-UON"/>
+                        <outlet property="label28" destination="Eax-Md-Ady" id="3b4-RF-0L9"/>
+                        <outlet property="label29" destination="58g-f4-Dqf" id="suw-Nr-4Bv"/>
+                        <outlet property="label3" destination="x80-qL-voZ" id="mJA-bx-fLl"/>
+                        <outlet property="label30" destination="Wtf-Wy-ys5" id="r3u-Gg-jai"/>
+                        <outlet property="label31" destination="hxC-xz-o2i" id="QYj-MS-Gzn"/>
+                        <outlet property="label32" destination="YMJ-rG-eIg" id="PUR-iN-BJz"/>
+                        <outlet property="label33" destination="dwH-tR-Qrh" id="hUm-ez-SG0"/>
+                        <outlet property="label34" destination="ssS-nG-znU" id="1eA-Qr-0OS"/>
+                        <outlet property="label35" destination="L3p-lB-C2Z" id="P7Z-Pp-fEf"/>
+                        <outlet property="label36" destination="SG1-T9-kqZ" id="uOY-w6-8nB"/>
+                        <outlet property="label37" destination="nj5-nE-SLW" id="NK5-NV-8gC"/>
+                        <outlet property="label38" destination="IBf-Yt-l32" id="Rwp-3d-vg0"/>
+                        <outlet property="label39" destination="ku4-bi-ul6" id="sAT-ma-B2r"/>
+                        <outlet property="label4" destination="LEx-7Y-Feu" id="rx6-oI-dOi"/>
+                        <outlet property="label40" destination="geM-7i-S4Z" id="qL8-mk-CM5"/>
+                        <outlet property="label41" destination="DSY-we-MxT" id="NFs-lB-edD"/>
+                        <outlet property="label42" destination="FRq-HL-16P" id="5gG-en-cmu"/>
+                        <outlet property="label43" destination="UsI-zO-siD" id="o2T-Fe-6e0"/>
+                        <outlet property="label44" destination="umd-ZS-FXN" id="4dC-yk-pg9"/>
+                        <outlet property="label45" destination="zof-1p-Ovi" id="LkO-dO-N4J"/>
+                        <outlet property="label46" destination="PlG-WJ-h8Q" id="ys5-Nh-D4f"/>
+                        <outlet property="label47" destination="3Tu-XM-1jk" id="M0C-kw-HI8"/>
+                        <outlet property="label48" destination="kLh-lY-Igi" id="QJg-kH-Svo"/>
+                        <outlet property="label49" destination="bdA-yt-rzf" id="RtV-oO-4oy"/>
+                        <outlet property="label5" destination="KBJ-6d-NHA" id="mAX-Yp-LFf"/>
+                        <outlet property="label50" destination="3pk-5H-ji2" id="Dbs-J7-zEm"/>
+                        <outlet property="label51" destination="BVy-40-lHa" id="bJm-wS-twj"/>
+                        <outlet property="label52" destination="2Vc-a7-Rwi" id="2sK-6L-v5E"/>
+                        <outlet property="label6" destination="bUs-Js-TI2" id="M5y-EX-hBU"/>
+                        <outlet property="label7" destination="zwG-AA-d1a" id="Y00-9b-iM2"/>
+                        <outlet property="label8" destination="5aG-0J-faN" id="Urg-Pk-T6m"/>
+                        <outlet property="label9" destination="buY-AP-fbd" id="siq-rQ-bgb"/>
+                        <outlet property="picker" destination="wWM-gv-gbe" id="1Gb-2R-hOG"/>
                         <outlet property="secondImage" destination="fwI-d1-qqP" id="T3L-kP-X64"/>
                         <outlet property="thirdImage" destination="ZXd-vd-qiK" id="8qi-D3-AUl"/>
                     </connections>
