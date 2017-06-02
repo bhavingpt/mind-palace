@@ -143,7 +143,7 @@ class EncodingStartViewController: UIViewController {
                 
                 let numGroups = numCards / 3 + ( numCards % 3 != 0 ? 1 : 0 )
 
-                dest.interval = Float(time) / Float(numGroups)
+                dest.interval = Double(time) / Double(numGroups)
             }
         }
         
