@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Welcome to Mnemosyne-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="mnemosyne" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,53 +18,80 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xUL-Py-ckw">
-                                <rect key="frame" x="123" y="244" width="128" height="180"/>
+                                <rect key="frame" x="66" y="179" width="242" height="245"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qz9-G9-2kY">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="30"/>
-                                        <state key="normal" title="Help! What is this?"/>
+                                        <rect key="frame" x="95.5" y="0.0" width="51" height="41"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="21"/>
+                                        <state key="normal" title="Help!">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sac-GK-l5B">
-                                        <rect key="frame" x="43.5" y="50" width="41" height="30"/>
-                                        <state key="normal" title="Setup"/>
+                                        <rect key="frame" x="22" y="61" width="198" height="48"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
+                                        <state key="normal" title="Setup Pairings ↣">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="rBn-yh-CIS" kind="show" id="dy2-tJ-iS5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMO-7n-qTU">
-                                        <rect key="frame" x="43.5" y="100" width="41" height="30"/>
-                                        <state key="normal" title="Recall"/>
+                                        <rect key="frame" x="45" y="129" width="152" height="48"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
+                                        <state key="normal" title="Test Recall ↣">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="1KT-rk-WEN" kind="show" id="2fH-Js-qkv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eff-Hr-4ra">
-                                        <rect key="frame" x="32" y="150" width="64" height="30"/>
-                                        <state key="normal" title="Encoding"/>
+                                        <rect key="frame" x="0.0" y="197" width="242" height="48"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
+                                        <state key="normal" title="Practice Encoding ↣">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="7OT-sr-3gw" kind="show" id="ZJj-s7-tLr"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mnemosyne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hn-pi-ID4">
+                                <rect key="frame" x="81" y="36" width="213" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShS-Jw-9mH">
+                                <rect key="frame" x="300" y="562" width="59" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.89916878938674927" green="0.44531172513961792" blue="0.50172215700149536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xUL-Py-ckw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OYl-At-4YB"/>
                             <constraint firstItem="xUL-Py-ckw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hVt-yr-tC2"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Welcome to Mnemosyne" id="X1S-I6-ECj"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationItem key="navigationItem" id="X1S-I6-ECj"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5273" y="-448"/>
+            <point key="canvasLocation" x="5272.8000000000002" y="-448.42578710644682"/>
         </scene>
         <!--Recall Test-->
         <scene sceneID="Are-ht-ctG">
@@ -75,7 +102,7 @@
                         <viewControllerLayoutGuide type="bottom" id="RDg-52-3om"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W5H-E0-zZW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="43" affinity="minX"/>
@@ -164,6 +191,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="clubs" destination="DNl-sD-KUW" id="Hzu-RB-1x2"/>
                         <outlet property="clubsLabel" destination="iAs-w2-ee9" id="x99-3b-QfT"/>
@@ -575,6 +603,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="congrats" destination="Tpc-HZ-KOT" id="qeM-Aj-F5J"/>
                         <outlet property="firstImage" destination="LkG-fQ-L18" id="kLn-It-WlP"/>
@@ -806,6 +835,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="cardPreview" destination="jDd-mY-PVa" id="TWy-WT-0Ub"/>
                         <outlet property="choiceA" destination="Tux-DW-dOY" id="klc-N4-PYH"/>
@@ -837,7 +867,7 @@
             <objects>
                 <tableViewController id="rBn-yh-CIS" customClass="CardTableViewController" customModule="mnemosyne" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ige-gu-dmt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2292,13 +2322,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lJB-69-lGX">
-                                <rect key="frame" x="87.5" y="102.5" width="201.5" height="462.5"/>
+                                <rect key="frame" x="87.5" y="79" width="201.5" height="509.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="akj-Zy-Y9x">
-                                        <rect key="frame" x="65" y="0.0" width="72" height="71"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallDefault" translatesAutoresizingMaskIntoConstraints="NO" id="akj-Zy-Y9x">
+                                        <rect key="frame" x="41" y="0.0" width="120" height="118"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-6V-rhb">
-                                        <rect key="frame" x="10" y="101" width="181.5" height="100.5"/>
+                                        <rect key="frame" x="10" y="148" width="181.5" height="100.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wo-HP-fP6">
                                                 <rect key="frame" x="64" y="0.0" width="53.5" height="20.5"/>
@@ -2326,7 +2356,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DU6-U9-GXu">
-                                        <rect key="frame" x="21.5" y="231.5" width="158.5" height="100.5"/>
+                                        <rect key="frame" x="21.5" y="278.5" width="158.5" height="100.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIi-Vs-sfr">
                                                 <rect key="frame" x="55" y="0.0" width="49" height="20.5"/>
@@ -2350,7 +2380,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BAk-G7-z63">
-                                        <rect key="frame" x="0.0" y="362" width="201.5" height="100.5"/>
+                                        <rect key="frame" x="0.0" y="409" width="201.5" height="100.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxW-0H-Xgn">
                                                 <rect key="frame" x="75.5" y="0.0" width="51" height="20.5"/>
@@ -2394,6 +2424,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="actionTextField" destination="M6v-6B-Pe6" id="7JP-1v-Nvd"/>
                         <outlet property="objectTextField" destination="GCs-c2-E3V" id="H5T-6a-m9q"/>
@@ -2411,9 +2442,15 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fAB-Lb-I49" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="auO-8n-3Ii">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="auO-8n-3Ii">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.89916878938674927" green="0.44531172513961792" blue="0.50172215700149536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -2487,7 +2524,7 @@
                         <viewControllerLayoutGuide type="bottom" id="QTM-em-0Pg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="d2x-Oo-VFq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="43" affinity="minX"/>
@@ -2597,6 +2634,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="clubs" destination="feR-TX-wxn" id="Dav-F8-HQ1"/>
                         <outlet property="clubsLabel" destination="Hvr-v1-Wsc" id="tCf-r8-MKt"/>
@@ -2617,7 +2655,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="default" width="72" height="71"/>
+        <image name="default" width="577" height="570"/>
+        <image name="smallDefault" width="120" height="118"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="VJc-xG-t9a"/>
