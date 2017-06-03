@@ -63,14 +63,17 @@ class RecallTestViewController: UIViewController {
     var startTime: Double = 0
     var elapsed: Double = 0
     var time: Double = 0
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         for button in [choiceA, choiceB, choiceC, choiceD] {
-            button?.layer.borderColor = UIColor.blue.cgColor
-            button?.layer.borderWidth = 1
-            button?.layer.cornerRadius = 5
+            button?.layer.cornerRadius = 10
         }
         
         if test.count == 0 {
@@ -182,10 +185,6 @@ class RecallTestViewController: UIViewController {
             
             image.image = images[test[question - 1]]
         }
-        for button in [choiceA, choiceB, choiceC, choiceD] {
-            button?.backgroundColor = UIColor.white
-            button?.setNeedsDisplay()
-        }
     }
     
     private func match(newarray: [Int]) -> Bool {
@@ -285,7 +284,10 @@ class RecallTestViewController: UIViewController {
             
             if (currentFail == failCard.count - 1) {
                 nextButton.isEnabled = false
+                nextButton.isHidden = true
             }
+            prevButton.isEnabled = false
+            prevButton.isHidden = true
         }
     }
     
@@ -298,8 +300,10 @@ class RecallTestViewController: UIViewController {
         rightText.text = cleanMapping[failCard[currentFail]]
         
         nextButton.isEnabled = true
+        nextButton.isHidden = false
         if (currentFail == 0) {
             prevButton.isEnabled = false
+            prevButton.isHidden = true
         }
     }
     
@@ -310,8 +314,10 @@ class RecallTestViewController: UIViewController {
         rightText.text = cleanMapping[failCard[currentFail]]
         
         prevButton.isEnabled = true
+        prevButton.isHidden = false
         if (currentFail == failCard.count - 1) {
             nextButton.isEnabled = false
+            nextButton.isHidden = true
         }
 
     }

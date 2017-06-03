@@ -52,6 +52,11 @@ class EncodingTestViewController: UIViewController, UIPickerViewDelegate,
                   #imageLiteral(resourceName: "card26"), #imageLiteral(resourceName: "card27"), #imageLiteral(resourceName: "card28"), #imageLiteral(resourceName: "card29"), #imageLiteral(resourceName: "card30"), #imageLiteral(resourceName: "card31"), #imageLiteral(resourceName: "card32"), #imageLiteral(resourceName: "card33"), #imageLiteral(resourceName: "card34"), #imageLiteral(resourceName: "card35"), #imageLiteral(resourceName: "card36"), #imageLiteral(resourceName: "card37"), #imageLiteral(resourceName: "card38"),
                   #imageLiteral(resourceName: "card39"), #imageLiteral(resourceName: "card40"), #imageLiteral(resourceName: "card41"), #imageLiteral(resourceName: "card42"), #imageLiteral(resourceName: "card43"), #imageLiteral(resourceName: "card44"), #imageLiteral(resourceName: "card45"), #imageLiteral(resourceName: "card46"), #imageLiteral(resourceName: "card47"), #imageLiteral(resourceName: "card48"), #imageLiteral(resourceName: "card49"), #imageLiteral(resourceName: "card50"), #imageLiteral(resourceName: "card51")]
     var cardList: [UILabel] = []
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
