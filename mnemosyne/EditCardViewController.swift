@@ -27,6 +27,11 @@ class EditCardViewController: UIViewController {
     @IBOutlet weak var actionTextField: UITextField!
     @IBOutlet weak var objectTextField: UITextField!
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if (first_text != nil) {
@@ -51,7 +56,6 @@ class EditCardViewController: UIViewController {
         super.prepare(for: segue, sender: sender)
         
         guard let button = sender as? UIBarButtonItem, button === saveButton else {
-            os_log("Save wasn't pressed", log: OSLog.default, type: .debug)
             return
         }
         

@@ -44,8 +44,8 @@ class EncodingStartViewController: UIViewController {
                         tempVal = true
                         (dict[key]?[0] as! UISwitch).isOn = false
                         (dict[key]?[0] as! UISwitch).isEnabled = false
-                        (dict[key]?[0] as! UISwitch).tintColor = UIColor.gray
-                        (dict[key]?[1] as! UILabel).textColor = UIColor.gray
+                        (dict[key]?[0] as! UISwitch).tintColor = UIColor.darkGray
+                        (dict[key]?[1] as! UILabel).textColor = UIColor.darkGray
                         (dict[key]?[1] as! UILabel).text = (dict[key]?[1] as! UILabel).text! + " (incomplete)"
                     }
                 }
@@ -58,7 +58,8 @@ class EncodingStartViewController: UIViewController {
         }
         
         start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
-        
+        start.setTitleColor(start.isEnabled ? UIColor.white : UIColor.darkGray
+, for: .normal)
         let numSuits = (spades.isOn ?1:0)+(clubs.isOn ?1:0)+(hearts.isOn ?1:0)+(diamonds.isOn ?1:0)
         let maxSeconds = 240 * numSuits
         let chosenSeconds = Int(0.5 * Float(maxSeconds))
@@ -79,6 +80,8 @@ class EncodingStartViewController: UIViewController {
     
     @IBAction func spadesChanged(_ sender: UISwitch) {
         start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
+        start.setTitleColor(start.isEnabled ? UIColor.white : UIColor.darkGray
+            , for: .normal)
         let value: Float = slider.value
         let numSuits = (spades.isOn ?1:0)+(clubs.isOn ?1:0)+(hearts.isOn ?1:0)+(diamonds.isOn ?1:0)
         let maxSeconds = 240 * numSuits
@@ -88,6 +91,8 @@ class EncodingStartViewController: UIViewController {
     
     @IBAction func diamondsChanged(_ sender: UISwitch) {
         start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
+        start.setTitleColor(start.isEnabled ? UIColor.white : UIColor.darkGray
+            , for: .normal)
         let value: Float = slider.value
         let numSuits = (spades.isOn ?1:0)+(clubs.isOn ?1:0)+(hearts.isOn ?1:0)+(diamonds.isOn ?1:0)
         let maxSeconds = 240 * numSuits
@@ -97,6 +102,8 @@ class EncodingStartViewController: UIViewController {
     
     @IBAction func heartsChanged(_ sender: UISwitch) {
         start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
+        start.setTitleColor(start.isEnabled ? UIColor.white : UIColor.darkGray
+            , for: .normal)
         let value: Float = slider.value
         let numSuits = (spades.isOn ?1:0)+(clubs.isOn ?1:0)+(hearts.isOn ?1:0)+(diamonds.isOn ?1:0)
         let maxSeconds = 240 * numSuits
@@ -106,6 +113,8 @@ class EncodingStartViewController: UIViewController {
     
     @IBAction func clubsChanged(_ sender: UISwitch) {
         start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
+        start.setTitleColor(start.isEnabled ? UIColor.white : UIColor.darkGray
+            , for: .normal)
         let value: Float = slider.value
         let numSuits = (spades.isOn ?1:0)+(clubs.isOn ?1:0)+(hearts.isOn ?1:0)+(diamonds.isOn ?1:0)
         let maxSeconds = 240 * numSuits

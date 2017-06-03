@@ -9,6 +9,10 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

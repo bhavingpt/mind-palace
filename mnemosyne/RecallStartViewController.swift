@@ -30,6 +30,7 @@ class RecallStartViewController: UIViewController {
     let defaults = UserDefaults.standard
     
     override func viewWillAppear(_ animated: Bool) {
+
         let mappings = defaults.object(forKey: "pao") as? [String] ?? Array(repeating: defaultString, count: 156)
         
         var dict = [0: [spades, spadesLabel], 39: [diamonds, diamondsLabel], 78: [hearts, heartsLabel], 117: [clubs, clubsLabel]]
@@ -42,8 +43,8 @@ class RecallStartViewController: UIViewController {
                         tempVal = true
                         (dict[key]?[0] as! UISwitch).isOn = false
                         (dict[key]?[0] as! UISwitch).isEnabled = false
-                        (dict[key]?[0] as! UISwitch).tintColor = UIColor.gray
-                        (dict[key]?[1] as! UILabel).textColor = UIColor.gray
+                        (dict[key]?[0] as! UISwitch).tintColor = UIColor.darkGray
+                        (dict[key]?[1] as! UILabel).textColor = UIColor.darkGray
                         (dict[key]?[1] as! UILabel).text = (dict[key]?[1] as! UILabel).text! + " (incomplete)"
                     }
                 }
@@ -56,7 +57,8 @@ class RecallStartViewController: UIViewController {
         }
         
         start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
-        
+        start.setTitleColor(start.isEnabled ? UIColor.white : UIColor.darkGray
+            , for: .normal)
     }
 
     override func viewDidLoad() {
@@ -73,20 +75,26 @@ class RecallStartViewController: UIViewController {
     
     @IBAction func spadesChanged(_ sender: UISwitch) {
         start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
+        start.setTitleColor(start.isEnabled ? UIColor.white : UIColor.darkGray
+            , for: .normal)
     }
     
     @IBAction func diamondsChanged(_ sender: UISwitch) {
         start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
-
+        start.setTitleColor(start.isEnabled ? UIColor.white : UIColor.darkGray
+            , for: .normal)
     }
     
     @IBAction func heartsChanged(_ sender: UISwitch) {
         start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
-
+        start.setTitleColor(start.isEnabled ? UIColor.white : UIColor.darkGray
+            , for: .normal)
     }
     
     @IBAction func clubsChanged(_ sender: UISwitch) {
         start.isEnabled = spades.isOn || clubs.isOn || diamonds.isOn || hearts.isOn
+        start.setTitleColor(start.isEnabled ? UIColor.white : UIColor.darkGray
+            , for: .normal)
     }
     
     
