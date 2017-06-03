@@ -701,35 +701,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You scored" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUV-s1-GA9">
-                                <rect key="frame" x="144" y="271" width="86" height="21"/>
+                                <rect key="frame" x="144" y="247" width="86" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="out of" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVw-fj-Jde">
-                                <rect key="frame" x="165" y="373" width="45" height="21"/>
+                                <rect key="frame" x="165" y="348" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-iC-ebG">
-                                <rect key="frame" x="166" y="308" width="44" height="51"/>
+                                <rect key="frame" x="166" y="281" width="44" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIR-Ij-k0y">
-                                <rect key="frame" x="155" y="402" width="66" height="63"/>
+                                <rect key="frame" x="154" y="386" width="66" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="49"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ff-ZK-XaB">
-                                <rect key="frame" x="41" y="142" width="294" height="99"/>
+                                <rect key="frame" x="40" y="123" width="294" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -740,6 +740,47 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuH-KR-s77">
+                                <rect key="frame" x="313" y="627" width="46" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="next:" destination="ppl-tD-qR5" eventType="touchUpInside" id="kkk-cS-Ot7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zec-de-Qcz">
+                                <rect key="frame" x="16" y="628" width="46" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="previous:" destination="ppl-tD-qR5" eventType="touchUpInside" id="aas-r2-6Dw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDd-mY-PVa">
+                                <rect key="frame" x="70" y="499" width="86" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQV-Xx-c0y">
+                                <rect key="frame" x="166" y="514" width="193" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="not" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftz-dg-snF">
+                                <rect key="frame" x="166" y="554" width="219" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donald Trump cooking a pizza wearing a crown" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kQ-Cl-mWA">
+                                <rect key="frame" x="166" y="577" width="193" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.0081320095410000008" blue="0.1874211533" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -758,16 +799,22 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cardPreview" destination="jDd-mY-PVa" id="TWy-WT-0Ub"/>
                         <outlet property="choiceA" destination="Tux-DW-dOY" id="klc-N4-PYH"/>
                         <outlet property="choiceB" destination="9ps-0C-0dl" id="LjB-kf-Zeb"/>
                         <outlet property="choiceC" destination="qOz-ay-kBF" id="wdL-My-YUS"/>
                         <outlet property="choiceD" destination="vuo-kC-cob" id="NNb-DL-DaB"/>
                         <outlet property="clock" destination="0Ff-ZK-XaB" id="mV1-pX-M9o"/>
                         <outlet property="image" destination="Wdt-tr-Sk2" id="1jN-he-pOj"/>
+                        <outlet property="nextButton" destination="VuH-KR-s77" id="wkJ-wc-ONJ"/>
+                        <outlet property="notText" destination="Ftz-dg-snF" id="xPy-5E-00H"/>
                         <outlet property="numCorrect" destination="6Wu-iC-ebG" id="Fd0-Ur-GbT"/>
                         <outlet property="numTotal" destination="hIR-Ij-k0y" id="JAv-Lx-p3q"/>
                         <outlet property="number" destination="Cmx-n1-mQg" id="H4h-35-Xtj"/>
+                        <outlet property="prevButton" destination="Zec-de-Qcz" id="pCC-Lt-Zpe"/>
+                        <outlet property="rightText" destination="XQV-Xx-c0y" id="GBP-Eg-Coa"/>
                         <outlet property="stopwatch" destination="EbI-gY-7VQ" id="w3w-7z-fif"/>
+                        <outlet property="wrongText" destination="4kQ-Cl-mWA" id="UHa-pe-pj5"/>
                         <outletCollection property="textFields" destination="BVw-fj-Jde" collectionClass="NSMutableArray" id="wS3-A1-bDP"/>
                         <outletCollection property="textFields" destination="NUV-s1-GA9" collectionClass="NSMutableArray" id="RGU-wb-BJb"/>
                     </connections>
@@ -2260,6 +2307,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y5-gR-VBT">
                                                 <rect key="frame" x="53" y="70.5" width="76" height="30"/>
                                                 <state key="normal" title="Randomize"/>
+                                                <connections>
+                                                    <action selector="randomizePerson:" destination="DxK-Qp-S7R" eventType="touchUpInside" id="Kia-BC-4z3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -2285,6 +2335,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6K-dY-QVZ">
                                                 <rect key="frame" x="41.5" y="70.5" width="76" height="30"/>
                                                 <state key="normal" title="Randomize"/>
+                                                <connections>
+                                                    <action selector="randomizeAction:" destination="DxK-Qp-S7R" eventType="touchUpInside" id="4or-bT-4gQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -2306,6 +2359,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hG-bJ-e6H">
                                                 <rect key="frame" x="63" y="70.5" width="76" height="30"/>
                                                 <state key="normal" title="Randomize"/>
+                                                <connections>
+                                                    <action selector="randomizeObject:" destination="DxK-Qp-S7R" eventType="touchUpInside" id="qMX-qG-IRY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

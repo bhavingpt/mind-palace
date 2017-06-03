@@ -91,6 +91,8 @@ class CardTableViewController: UITableViewController {
                 if (current_third != defaultString) {
                     dest.third_text = current_third
                 }
+                
+                dest.mappings = self.mappings
             }
         }
     }

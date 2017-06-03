@@ -17,6 +17,10 @@ class RecallTestViewController: UIViewController {
     var cleanMapping = [String]()
     var test = [Int]()
     var results = [Bool]()
+    var failCard = [Int]()
+    var failString = [String]()
+    
+    var currentFail = -1
     let images = [#imageLiteral(resourceName: "card0"), #imageLiteral(resourceName: "card1"), #imageLiteral(resourceName: "card2"), #imageLiteral(resourceName: "card3"), #imageLiteral(resourceName: "card4"), #imageLiteral(resourceName: "card5"), #imageLiteral(resourceName: "card6"), #imageLiteral(resourceName: "card7"), #imageLiteral(resourceName: "card8"), #imageLiteral(resourceName: "card9"), #imageLiteral(resourceName: "card10"), #imageLiteral(resourceName: "card11"), #imageLiteral(resourceName: "card12"),
                   #imageLiteral(resourceName: "card13"), #imageLiteral(resourceName: "card14"), #imageLiteral(resourceName: "card15"), #imageLiteral(resourceName: "card16"), #imageLiteral(resourceName: "card17"), #imageLiteral(resourceName: "card18"), #imageLiteral(resourceName: "card19"), #imageLiteral(resourceName: "card20"), #imageLiteral(resourceName: "card21"), #imageLiteral(resourceName: "card22"), #imageLiteral(resourceName: "card23"), #imageLiteral(resourceName: "card24"), #imageLiteral(resourceName: "card25"),
                   #imageLiteral(resourceName: "card26"), #imageLiteral(resourceName: "card27"), #imageLiteral(resourceName: "card28"), #imageLiteral(resourceName: "card29"), #imageLiteral(resourceName: "card30"), #imageLiteral(resourceName: "card31"), #imageLiteral(resourceName: "card32"), #imageLiteral(resourceName: "card33"), #imageLiteral(resourceName: "card34"), #imageLiteral(resourceName: "card35"), #imageLiteral(resourceName: "card36"), #imageLiteral(resourceName: "card37"), #imageLiteral(resourceName: "card38"),
@@ -45,6 +49,14 @@ class RecallTestViewController: UIViewController {
     @IBOutlet weak var numCorrect: UILabel!
     @IBOutlet weak var numTotal: UILabel!
     
+    @IBOutlet weak var prevButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var cardPreview: UIImageView!
+    @IBOutlet weak var wrongText: UILabel!
+    @IBOutlet weak var rightText: UILabel!
+    @IBOutlet weak var notText: UILabel!
+    
+    
     // MARK: Timer
     
     weak var timer: Timer?
@@ -68,6 +80,14 @@ class RecallTestViewController: UIViewController {
             }
             numCorrect.isHidden = true
             numTotal.isHidden = true
+            prevButton.isEnabled = false
+            prevButton.isHidden = true
+            nextButton.isEnabled = false
+            nextButton.isHidden = true
+            cardPreview.isHidden = true
+            wrongText.isHidden = true
+            rightText.isHidden = true
+            notText.isHidden = true
             
             self.mapping = (defaults.object(forKey: "pao") as? [String])!
             
@@ -88,15 +108,12 @@ class RecallTestViewController: UIViewController {
     
     @IBAction func selection(_ sender: UIButton) {
         results.append(sender.currentTitle! == cleanMapping[test[question - 1]])
-        if results.last! {
-            sender.backgroundColor = UIColor.green
-            sender.setNeedsDisplay()
-        } else {
-            sender.backgroundColor = UIColor.red
-            sender.setNeedsDisplay()
-        }
         
-        sender.setNeedsDisplay()
+        if !results.last! {
+            // it was a miss
+            failCard.append(test[question - 1])
+            failString.append(sender.currentTitle!)
+        }
         
         nextQuestion()
     }
@@ -198,6 +215,13 @@ class RecallTestViewController: UIViewController {
         for label in textFields {
             label.isHidden = false
         }
+        prevButton.isHidden = false
+        nextButton.isHidden = false
+        nextButton.isEnabled = true
+        cardPreview.isHidden = false
+        wrongText.isHidden = false
+        rightText.isHidden = false
+        notText.isHidden = false
         
         var right = 0
         for q in results {
@@ -208,6 +232,8 @@ class RecallTestViewController: UIViewController {
         numCorrect.isHidden = false
         numTotal.text = String(question)
         numTotal.isHidden = false
+        
+        displayFirstMiss()
     }
     
     private func isTested(cardNum: Int) -> Bool {
@@ -235,5 +261,61 @@ class RecallTestViewController: UIViewController {
         
         stopwatch.text = strMinutes + ":" + strSeconds
     }
+    
+    private func displayFirstMiss() {
+        var right = 0
+        for q in results {
+            right += q ? 1 : 0
+        }
+        if right == question {
+            prevButton.isEnabled = false
+            prevButton.isHidden = true
+            nextButton.isEnabled = false
+            nextButton.isHidden = true
+            cardPreview.isHidden = true
+            notText.isHidden = true
+            rightText.isHidden = true
+            wrongText.isHidden = true
+        } else {
+            currentFail = 0
+            
+            cardPreview.image = images[failCard[currentFail]]
+            wrongText.text = failString[currentFail]
+            rightText.text = cleanMapping[failCard[currentFail]]
+            
+            if (currentFail == failCard.count - 1) {
+                nextButton.isEnabled = false
+            }
+        }
+    }
+    
+    // MARK: Buttons
+    
+    @IBAction func previous(_ sender: UIButton) {
+        currentFail -= 1
+        cardPreview.image = images[failCard[currentFail]]
+        wrongText.text = failString[currentFail]
+        rightText.text = cleanMapping[failCard[currentFail]]
+        
+        nextButton.isEnabled = true
+        if (currentFail == 0) {
+            prevButton.isEnabled = false
+        }
+    }
+    
+    @IBAction func next(_ sender: UIButton) {
+        currentFail += 1
+        cardPreview.image = images[failCard[currentFail]]
+        wrongText.text = failString[currentFail]
+        rightText.text = cleanMapping[failCard[currentFail]]
+        
+        prevButton.isEnabled = true
+        if (currentFail == failCard.count - 1) {
+            nextButton.isEnabled = false
+        }
+
+    }
+    
+    
 
 }
