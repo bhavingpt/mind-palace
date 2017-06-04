@@ -10,8 +10,16 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    var tutorialDone = false
+    let defaults = UserDefaults.standard
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.tintColor = UIColor.white
+        tutorialDone = defaults.object(forKey: "tutorial") as? Bool ?? false
+        
+        if (!tutorialDone) {
+            startTutorial()
+        }
     }
 
     override func viewDidLoad() {
@@ -27,6 +35,12 @@ class HomeViewController: UIViewController {
     
     @IBAction func unwindToHome(sender: UIStoryboardSegue) {
         
+    }
+    
+    private func startTutorial() {
+        tutorialDone = true
+        defaults.set(self.tutorialDone, forKey: "tutorial")
+        performSegue(withIdentifier: "beginTutorial", sender: (Any).self)
     }
     
 
