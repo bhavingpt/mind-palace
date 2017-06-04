@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import os.log
 
 class EncodingStartViewController: UIViewController {
     

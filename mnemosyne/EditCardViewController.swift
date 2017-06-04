@@ -8,7 +8,6 @@
 
 import UIKit
 import GameKit
-import os.log
 
 class EditCardViewController: UIViewController {
     
