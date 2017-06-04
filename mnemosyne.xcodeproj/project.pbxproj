@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F11E88831EE38858008590B2 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11E88821EE38858008590B2 /* TutorialPageViewController.swift */; };
 		F16816291EDD35670022F191 /* RecallStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16816281EDD35670022F191 /* RecallStartViewController.swift */; };
 		F168162B1EDD39BD0022F191 /* RecallTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F168162A1EDD39BD0022F191 /* RecallTestViewController.swift */; };
 		F1EB7C2D1EDFEBF9003A194E /* EncodingStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB7C2C1EDFEBF9003A194E /* EncodingStartViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F11E88821EE38858008590B2 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialPageViewController.swift; path = ../TutorialPageViewController.swift; sourceTree = "<group>"; };
 		F16816281EDD35670022F191 /* RecallStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecallStartViewController.swift; sourceTree = "<group>"; };
 		F168162A1EDD39BD0022F191 /* RecallTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecallTestViewController.swift; sourceTree = "<group>"; };
 		F1EB7C2C1EDFEBF9003A194E /* EncodingStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingStartViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		F1F5AE1B1EDA2A7C005AC87A /* mnemosyne */ = {
 			isa = PBXGroup;
 			children = (
+				F11E88821EE38858008590B2 /* TutorialPageViewController.swift */,
 				F1EB7C2C1EDFEBF9003A194E /* EncodingStartViewController.swift */,
 				F168162A1EDD39BD0022F191 /* RecallTestViewController.swift */,
 				F16816281EDD35670022F191 /* RecallStartViewController.swift */,
@@ -173,6 +176,7 @@
 				F1EB7C2D1EDFEBF9003A194E /* EncodingStartViewController.swift in Sources */,
 				F1F5AE2F1EDA2B7D005AC87A /* HomeViewController.swift in Sources */,
 				F1F5AE331EDA32C1005AC87A /* CardTableViewController.swift in Sources */,
+				F11E88831EE38858008590B2 /* TutorialPageViewController.swift in Sources */,
 				F1F5AE311EDA3298005AC87A /* CardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
