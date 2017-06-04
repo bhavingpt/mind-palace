@@ -74,7 +74,7 @@ class CardTableViewController: UITableViewController {
             if let dest = nav.viewControllers[0] as? EditCardViewController {
                 let cardNum = Int(segue.identifier!)
                 dest.currentCard = cardNum!
-                                
+                
                 let current_first = mappings[cardNum! * 3]
                 let current_second = mappings[cardNum! * 3 + 1]
                 let current_third = mappings[cardNum! * 3 + 2]
