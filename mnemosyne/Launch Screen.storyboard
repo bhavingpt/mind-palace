@@ -5,6 +5,8 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,26 +22,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="wdf-b4-uS9">
-                                <rect key="frame" x="129" y="147" width="116" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="wdf-b4-uS9">
+                                <rect key="frame" x="129" y="151" width="116" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="42e-9y-nPh"/>
+                                    <constraint firstAttribute="width" constant="116" id="LNa-kd-TXb"/>
+                                    <constraint firstAttribute="width" secondItem="wdf-b4-uS9" secondAttribute="height" multiplier="1:1" id="WHd-HW-Y3k"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="m·nem·o·syne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KId-IQ-SQF">
-                                <rect key="frame" x="70" y="278" width="235" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From Greek Μνημοσύνη: memory. See mnâsthai (to remember), mnḗmōn (mindful)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPa-Lg-Lb3">
+                                <rect key="frame" x="70" y="389" width="235" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From Greek Μνημοσύνη: memory. See mnâsthai (to remember), mnḗmōn (mindful)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPa-Lg-Lb3">
-                                <rect key="frame" x="70" y="374" width="235" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m·nem·o·syne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KId-IQ-SQF">
+                                <rect key="frame" x="41" y="312" width="293" height="42"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.82352941176470584" green="0.23529411764705882" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wdf-b4-uS9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="D35-LK-o9I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tPa-Lg-Lb3" secondAttribute="trailing" constant="54" id="G5h-1h-h5b"/>
+                            <constraint firstItem="KId-IQ-SQF" firstAttribute="top" secondItem="wdf-b4-uS9" secondAttribute="bottom" constant="45" id="XLZ-Rk-Jkf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wdf-b4-uS9" secondAttribute="trailing" constant="114" id="YTJ-ts-Ipl"/>
+                            <constraint firstItem="tPa-Lg-Lb3" firstAttribute="top" secondItem="KId-IQ-SQF" secondAttribute="bottom" constant="35" id="dTb-pD-QQg"/>
+                            <constraint firstItem="KId-IQ-SQF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rJm-6i-GdP"/>
+                            <constraint firstItem="tPa-Lg-Lb3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rei-wu-Nm5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KId-IQ-SQF" secondAttribute="trailing" constant="25" id="wD1-W6-5Vm"/>
+                            <constraint firstItem="KId-IQ-SQF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ymu-tz-T9z"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
