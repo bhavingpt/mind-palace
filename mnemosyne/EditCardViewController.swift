@@ -48,7 +48,6 @@ class EditCardViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -56,19 +55,18 @@ class EditCardViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if textField.placeholder == "What are they doing it with?" {
-            print ("move view up")
+            self.view.frame.origin.y -= 150
         }
+        
         return true
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
-        
         if textField.placeholder == "What are they doing it with?" {
-            print ("move view down")
+            self.view.frame.origin.y += 150
         }
-        
         return true
     }
     
