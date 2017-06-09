@@ -74,6 +74,7 @@ class RecallTestViewController: UIViewController {
         
         for button in [choiceA, choiceB, choiceC, choiceD] {
             button?.layer.cornerRadius = 10
+            button?.titleLabel?.adjustsFontSizeToFitWidth = true
         }
         
         if test.count == 0 {

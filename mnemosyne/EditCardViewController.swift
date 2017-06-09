@@ -21,7 +21,6 @@ class EditCardViewController: UIViewController, UITextFieldDelegate {
     var save_data: Bool = false
     var mappings: [String] = []
     
-    @IBOutlet weak var scrolly: UIScrollView!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var personTextField: UITextField!
     @IBOutlet weak var actionTextField: UITextField!
@@ -47,37 +46,29 @@ class EditCardViewController: UIViewController, UITextFieldDelegate {
             self.objectTextField.text = third_text
         }
         
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: Notification.Name.UIKeyboardWillHide, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: Notification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
     
-    func adjustForKeyboard(notification: Notification) {
-        let userInfo = notification.userInfo!
-        
-        let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, from: view.window)
-        
-        if notification.name == Notification.Name.UIKeyboardWillHide {
-            scrolly.contentInset = UIEdgeInsets.zero
-        } else {
-            scrolly.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardViewEndFrame.height, right: 0)
-        }
-        
-        scrolly.scrollIndicatorInsets = scrolly.contentInset
-        
-        //let selectedRange = scrolly.selectedRange
-        //scrolly.scrollRangeToVisible(selectedRange)
-    }
-
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        if textField.placeholder == "What are they doing it with?" {
+            print ("move view up")
+        }
+        return true
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
+        
+        if textField.placeholder == "What are they doing it with?" {
+            print ("move view down")
+        }
+        
         return true
     }
     

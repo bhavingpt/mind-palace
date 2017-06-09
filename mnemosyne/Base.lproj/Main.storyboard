@@ -307,17 +307,17 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LkG-fQ-L18">
-                                <rect key="frame" x="43" y="128" width="212" height="303"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LkG-fQ-L18">
+                                <rect key="frame" x="43" y="126.5" width="190" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LkG-fQ-L18" secondAttribute="height" multiplier="212:303" id="ZkD-GO-ehG"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fwI-d1-qqP">
-                                <rect key="frame" x="80" y="128" width="212" height="303"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fwI-d1-qqP">
+                                <rect key="frame" x="93" y="126.5" width="189" height="270"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZXd-vd-qiK">
-                                <rect key="frame" x="120" y="128" width="212" height="303"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZXd-vd-qiK">
+                                <rect key="frame" x="142" y="126.5" width="190" height="270"/>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWM-gv-gbe">
                                 <rect key="frame" x="27" y="310" width="320" height="216"/>
@@ -341,109 +341,109 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ON3-MX-fZq">
                                 <rect key="frame" x="0.0" y="4" width="118.5" height="356"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3W-9Z-3V5" userLabel="1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="K3W-9Z-3V5" userLabel="1">
                                         <rect key="frame" x="0.0" y="0.0" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9p-1q-HwO" userLabel="2">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="v9p-1q-HwO" userLabel="2">
                                         <rect key="frame" x="0.0" y="20" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x80-qL-voZ" userLabel="3">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="x80-qL-voZ" userLabel="3">
                                         <rect key="frame" x="0.0" y="40" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEx-7Y-Feu" userLabel="4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LEx-7Y-Feu" userLabel="4">
                                         <rect key="frame" x="0.0" y="60" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBJ-6d-NHA" userLabel="5">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KBJ-6d-NHA" userLabel="5">
                                         <rect key="frame" x="0.0" y="80" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUs-Js-TI2" userLabel="6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bUs-Js-TI2" userLabel="6">
                                         <rect key="frame" x="0.0" y="100" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwG-AA-d1a" userLabel="7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zwG-AA-d1a" userLabel="7">
                                         <rect key="frame" x="0.0" y="120" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aG-0J-faN" userLabel="8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5aG-0J-faN" userLabel="8">
                                         <rect key="frame" x="0.0" y="140" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buY-AP-fbd" userLabel="9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="buY-AP-fbd" userLabel="9">
                                         <rect key="frame" x="0.0" y="160" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4as-Wn-7WJ" userLabel="10">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4as-Wn-7WJ" userLabel="10">
                                         <rect key="frame" x="0.0" y="180" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgx-Yx-3RQ" userLabel="11">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xgx-Yx-3RQ" userLabel="11">
                                         <rect key="frame" x="0.0" y="200" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOJ-tP-na0" userLabel="12">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vOJ-tP-na0" userLabel="12">
                                         <rect key="frame" x="0.0" y="220" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha8-Vr-vFH" userLabel="13">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ha8-Vr-vFH" userLabel="13">
                                         <rect key="frame" x="0.0" y="240" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSb-MV-xwS" userLabel="14">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mSb-MV-xwS" userLabel="14">
                                         <rect key="frame" x="0.0" y="260" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6j-uR-b6P" userLabel="15">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="U6j-uR-b6P" userLabel="15">
                                         <rect key="frame" x="0.0" y="280" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aT3-Jz-adQ" userLabel="16">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aT3-Jz-adQ" userLabel="16">
                                         <rect key="frame" x="0.0" y="300" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfW-Ny-345" userLabel="17">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YfW-Ny-345" userLabel="17">
                                         <rect key="frame" x="0.0" y="320" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKZ-0k-heZ" userLabel="18">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pKZ-0k-heZ" userLabel="18">
                                         <rect key="frame" x="0.0" y="340" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -454,109 +454,109 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ca6-hs-vbF">
                                 <rect key="frame" x="128.5" y="4" width="118.5" height="356"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpQ-PV-cvc" userLabel="19">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jpQ-PV-cvc" userLabel="19">
                                         <rect key="frame" x="0.0" y="0.0" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2C-5A-4gQ" userLabel="20">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O2C-5A-4gQ" userLabel="20">
                                         <rect key="frame" x="0.0" y="20" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVe-gd-tLX" userLabel="21">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AVe-gd-tLX" userLabel="21">
                                         <rect key="frame" x="0.0" y="40" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd6-gD-YXJ" userLabel="22">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hd6-gD-YXJ" userLabel="22">
                                         <rect key="frame" x="0.0" y="60" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWO-4n-jtb" userLabel="23">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oWO-4n-jtb" userLabel="23">
                                         <rect key="frame" x="0.0" y="80" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pC-Vq-QbI" userLabel="24">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8pC-Vq-QbI" userLabel="24">
                                         <rect key="frame" x="0.0" y="100" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXj-Mf-1ee" userLabel="25">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zXj-Mf-1ee" userLabel="25">
                                         <rect key="frame" x="0.0" y="120" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJs-Sf-AAv" userLabel="26">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FJs-Sf-AAv" userLabel="26">
                                         <rect key="frame" x="0.0" y="140" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkI-hE-h3h" userLabel="27">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CkI-hE-h3h" userLabel="27">
                                         <rect key="frame" x="0.0" y="160" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eax-Md-Ady" userLabel="28">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Eax-Md-Ady" userLabel="28">
                                         <rect key="frame" x="0.0" y="180" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58g-f4-Dqf" userLabel="29">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="58g-f4-Dqf" userLabel="29">
                                         <rect key="frame" x="0.0" y="200" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtf-Wy-ys5" userLabel="30">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wtf-Wy-ys5" userLabel="30">
                                         <rect key="frame" x="0.0" y="220" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxC-xz-o2i" userLabel="31">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hxC-xz-o2i" userLabel="31">
                                         <rect key="frame" x="0.0" y="240" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMJ-rG-eIg" userLabel="32">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YMJ-rG-eIg" userLabel="32">
                                         <rect key="frame" x="0.0" y="260" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwH-tR-Qrh" userLabel="33">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dwH-tR-Qrh" userLabel="33">
                                         <rect key="frame" x="0.0" y="280" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssS-nG-znU" userLabel="34">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ssS-nG-znU" userLabel="34">
                                         <rect key="frame" x="0.0" y="300" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3p-lB-C2Z" userLabel="35">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L3p-lB-C2Z" userLabel="35">
                                         <rect key="frame" x="0.0" y="320" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SG1-T9-kqZ" userLabel="36">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SG1-T9-kqZ" userLabel="36">
                                         <rect key="frame" x="0.0" y="340" width="118.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -565,100 +565,100 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="uah-Wi-3Ao">
-                                <rect key="frame" x="256.5" y="4" width="118.5" height="316"/>
+                                <rect key="frame" x="256" y="4" width="119" height="316"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nj5-nE-SLW" userLabel="37">
-                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nj5-nE-SLW" userLabel="37">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBf-Yt-l32" userLabel="38">
-                                        <rect key="frame" x="0.0" y="20" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IBf-Yt-l32" userLabel="38">
+                                        <rect key="frame" x="0.0" y="20" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ku4-bi-ul6" userLabel="39">
-                                        <rect key="frame" x="0.0" y="40" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ku4-bi-ul6" userLabel="39">
+                                        <rect key="frame" x="0.0" y="40" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geM-7i-S4Z" userLabel="40">
-                                        <rect key="frame" x="0.0" y="60" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="geM-7i-S4Z" userLabel="40">
+                                        <rect key="frame" x="0.0" y="60" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSY-we-MxT" userLabel="41">
-                                        <rect key="frame" x="0.0" y="80" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DSY-we-MxT" userLabel="41">
+                                        <rect key="frame" x="0.0" y="80" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRq-HL-16P" userLabel="42">
-                                        <rect key="frame" x="0.0" y="100" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FRq-HL-16P" userLabel="42">
+                                        <rect key="frame" x="0.0" y="100" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsI-zO-siD" userLabel="43">
-                                        <rect key="frame" x="0.0" y="120" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UsI-zO-siD" userLabel="43">
+                                        <rect key="frame" x="0.0" y="120" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umd-ZS-FXN" userLabel="44">
-                                        <rect key="frame" x="0.0" y="140" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="umd-ZS-FXN" userLabel="44">
+                                        <rect key="frame" x="0.0" y="140" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zof-1p-Ovi" userLabel="45">
-                                        <rect key="frame" x="0.0" y="160" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zof-1p-Ovi" userLabel="45">
+                                        <rect key="frame" x="0.0" y="160" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlG-WJ-h8Q" userLabel="46">
-                                        <rect key="frame" x="0.0" y="180" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PlG-WJ-h8Q" userLabel="46">
+                                        <rect key="frame" x="0.0" y="180" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tu-XM-1jk" userLabel="47">
-                                        <rect key="frame" x="0.0" y="200" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3Tu-XM-1jk" userLabel="47">
+                                        <rect key="frame" x="0.0" y="200" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLh-lY-Igi" userLabel="48">
-                                        <rect key="frame" x="0.0" y="220" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kLh-lY-Igi" userLabel="48">
+                                        <rect key="frame" x="0.0" y="220" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdA-yt-rzf" userLabel="49">
-                                        <rect key="frame" x="0.0" y="240" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bdA-yt-rzf" userLabel="49">
+                                        <rect key="frame" x="0.0" y="240" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pk-5H-ji2" userLabel="50">
-                                        <rect key="frame" x="0.0" y="260" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3pk-5H-ji2" userLabel="50">
+                                        <rect key="frame" x="0.0" y="260" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVy-40-lHa" userLabel="51">
-                                        <rect key="frame" x="0.0" y="280" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BVy-40-lHa" userLabel="51">
+                                        <rect key="frame" x="0.0" y="280" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vc-a7-Rwi" userLabel="52">
-                                        <rect key="frame" x="0.0" y="300" width="118.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen of diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Vc-a7-Rwi" userLabel="52">
+                                        <rect key="frame" x="0.0" y="300" width="119" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -666,7 +666,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations! You did it!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpc-HZ-KOT">
-                                <rect key="frame" x="74" y="407.5" width="226" height="23.5"/>
+                                <rect key="frame" x="74" y="407" width="226" height="23.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="0.8991687894" green="0.4453117251" blue="0.501722157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -674,20 +674,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fwI-d1-qqP" firstAttribute="centerX" secondItem="XHM-36-qsK" secondAttribute="centerX" id="1sT-WH-bWG"/>
                             <constraint firstItem="Ca6-hs-vbF" firstAttribute="top" secondItem="g0S-5b-U9L" secondAttribute="bottom" constant="4" id="2Ap-o4-Cld"/>
+                            <constraint firstItem="ZXd-vd-qiK" firstAttribute="centerY" secondItem="fwI-d1-qqP" secondAttribute="centerY" id="AQp-KK-Npu"/>
+                            <constraint firstItem="LkG-fQ-L18" firstAttribute="centerY" secondItem="fwI-d1-qqP" secondAttribute="centerY" id="HI8-nO-Ren"/>
                             <constraint firstItem="ZlA-ie-oJq" firstAttribute="top" secondItem="wWM-gv-gbe" secondAttribute="bottom" constant="20" id="Ixf-sU-fRq"/>
-                            <constraint firstItem="Ca6-hs-vbF" firstAttribute="top" secondItem="g0S-5b-U9L" secondAttribute="bottom" constant="4" id="JPY-no-KkS"/>
-                            <constraint firstItem="Ca6-hs-vbF" firstAttribute="centerX" secondItem="ZlA-ie-oJq" secondAttribute="centerX" id="LI2-hG-LH8"/>
+                            <constraint firstItem="ZlA-ie-oJq" firstAttribute="centerX" secondItem="XHM-36-qsK" secondAttribute="centerX" id="JpI-Y4-9lN"/>
                             <constraint firstItem="ON3-MX-fZq" firstAttribute="top" secondItem="g0S-5b-U9L" secondAttribute="bottom" constant="4" id="LJs-zf-A7E"/>
                             <constraint firstItem="JXc-Pg-b22" firstAttribute="top" secondItem="ZlA-ie-oJq" secondAttribute="bottom" constant="20" id="Lbj-fg-ciY"/>
+                            <constraint firstItem="fwI-d1-qqP" firstAttribute="width" secondItem="ZXd-vd-qiK" secondAttribute="height" multiplier="212:303" id="MiJ-7V-cUh"/>
+                            <constraint firstItem="fwI-d1-qqP" firstAttribute="leading" secondItem="LkG-fQ-L18" secondAttribute="trailing" constant="-140" id="OCf-ze-BMr"/>
+                            <constraint firstItem="ZXd-vd-qiK" firstAttribute="leading" secondItem="fwI-d1-qqP" secondAttribute="trailing" constant="-140" id="R1a-Md-j3f"/>
+                            <constraint firstItem="fwI-d1-qqP" firstAttribute="top" secondItem="ZXd-vd-qiK" secondAttribute="top" id="SZX-WE-tUS"/>
                             <constraint firstItem="uah-Wi-3Ao" firstAttribute="top" secondItem="g0S-5b-U9L" secondAttribute="bottom" constant="4" id="WLP-gL-mWb"/>
+                            <constraint firstItem="wWM-gv-gbe" firstAttribute="centerX" secondItem="XHM-36-qsK" secondAttribute="centerX" id="cpw-Ch-GrY"/>
                             <constraint firstItem="Tpc-HZ-KOT" firstAttribute="centerX" secondItem="XHM-36-qsK" secondAttribute="centerX" id="dmP-lj-UI7"/>
                             <constraint firstItem="ZlA-ie-oJq" firstAttribute="top" secondItem="Tpc-HZ-KOT" secondAttribute="bottom" constant="115.5" id="gMh-cG-mON"/>
+                            <constraint firstItem="fwI-d1-qqP" firstAttribute="centerY" secondItem="XHM-36-qsK" secondAttribute="centerY" constant="-40" id="gbZ-gn-pdg"/>
                             <constraint firstItem="ON3-MX-fZq" firstAttribute="leading" secondItem="XHM-36-qsK" secondAttribute="leading" id="hGs-Na-anI"/>
-                            <constraint firstItem="ON3-MX-fZq" firstAttribute="top" secondItem="g0S-5b-U9L" secondAttribute="bottom" constant="4" id="kdN-Jx-fPC"/>
+                            <constraint firstItem="LkG-fQ-L18" firstAttribute="leading" secondItem="XHM-36-qsK" secondAttribute="leadingMargin" constant="27" id="hu7-9P-hJZ"/>
                             <constraint firstItem="Ca6-hs-vbF" firstAttribute="centerX" secondItem="XHM-36-qsK" secondAttribute="centerX" id="r3i-pd-Ees"/>
+                            <constraint firstItem="Ca6-hs-vbF" firstAttribute="leading" secondItem="ON3-MX-fZq" secondAttribute="trailing" constant="10" id="rQU-bT-Jag"/>
+                            <constraint firstItem="uah-Wi-3Ao" firstAttribute="leading" secondItem="Ca6-hs-vbF" secondAttribute="trailing" constant="9.5" id="t4w-1S-Hde"/>
                             <constraint firstAttribute="trailing" secondItem="uah-Wi-3Ao" secondAttribute="trailing" id="tMI-dQ-dyf"/>
-                            <constraint firstItem="Ca6-hs-vbF" firstAttribute="centerX" secondItem="wWM-gv-gbe" secondAttribute="centerX" id="uVa-LU-mjc"/>
+                            <constraint firstItem="ZXd-vd-qiK" firstAttribute="width" secondItem="LkG-fQ-L18" secondAttribute="width" id="u5d-04-1p7"/>
+                            <constraint firstItem="LkG-fQ-L18" firstAttribute="width" secondItem="fwI-d1-qqP" secondAttribute="height" multiplier="212:303" id="uXx-zd-Oaj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Encoding Test" id="F2S-xZ-b6x">
@@ -825,52 +836,52 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vuo-kC-cob" secondAttribute="trailing" id="TGn-qG-dj2"/>
+                                    <constraint firstItem="vuo-kC-cob" firstAttribute="leading" secondItem="vls-7c-UTk" secondAttribute="leading" id="cjx-qG-XhC"/>
+                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbI-gY-7VQ">
-                                <rect key="frame" x="298" y="20" width="77" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EbI-gY-7VQ">
+                                <rect key="frame" x="300.5" y="20" width="58.5" height="25.5"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 <color key="textColor" red="0.8991687894" green="0.4453117251" blue="0.501722157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You scored" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUV-s1-GA9">
-                                <rect key="frame" x="144" y="195" width="86" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You scored" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NUV-s1-GA9">
+                                <rect key="frame" x="146.5" y="218.5" width="81" height="22"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="out of" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVw-fj-Jde">
-                                <rect key="frame" x="166" y="306" width="45" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="out of" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BVw-fj-Jde">
+                                <rect key="frame" x="166" y="305" width="43" height="22"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-iC-ebG">
-                                <rect key="frame" x="166" y="240" width="45" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-iC-ebG">
+                                <rect key="frame" x="166" y="252.5" width="43.5" height="40.5"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="35"/>
                                 <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIR-Ij-k0y">
-                                <rect key="frame" x="155" y="340" width="66" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hIR-Ij-k0y">
+                                <rect key="frame" x="158.5" y="340" width="59.5" height="55.5"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="48"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmx-n1-mQg">
-                                <rect key="frame" x="162" y="8" width="53" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Cmx-n1-mQg">
+                                <rect key="frame" x="168" y="8" width="39.5" height="38.5"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="33"/>
                                 <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuH-KR-s77">
-                                <rect key="frame" x="305" y="553" width="54" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuH-KR-s77">
+                                <rect key="frame" x="311" y="553" width="48" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uXp-S0-7cc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.8991687894" green="0.4453117251" blue="0.501722157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -879,9 +890,8 @@
                                     <action selector="next:" destination="ppl-tD-qR5" eventType="touchUpInside" id="kkk-cS-Ot7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zec-de-Qcz">
-                                <rect key="frame" x="16" y="554" width="50" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zec-de-Qcz">
+                                <rect key="frame" x="16" y="553" width="48" height="50"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
                                 <state key="normal" title="Prev">
                                     <color key="titleColor" red="0.8991687894" green="0.4453117251" blue="0.501722157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -890,38 +900,39 @@
                                     <action selector="previous:" destination="ppl-tD-qR5" eventType="touchUpInside" id="aas-r2-6Dw"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDd-mY-PVa">
-                                <rect key="frame" x="65" y="424" width="91" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jDd-mY-PVa">
+                                <rect key="frame" x="41" y="446" width="53.5" height="74.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74.5" id="S5X-Am-IK7"/>
+                                    <constraint firstAttribute="width" secondItem="jDd-mY-PVa" secondAttribute="height" multiplier="5:7" id="u2R-V5-dpW"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQV-Xx-c0y">
-                                <rect key="frame" x="166" y="424" width="193" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XQV-Xx-c0y">
+                                <rect key="frame" x="104.5" y="446" width="254.5" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="0.49803921569999998" green="0.79215686269999996" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="not" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftz-dg-snF">
-                                <rect key="frame" x="166" y="473" width="219" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="not" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ftz-dg-snF">
+                                <rect key="frame" x="104.5" y="474" width="254.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donald Trump cooking a pizza wearing a crown" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kQ-Cl-mWA">
-                                <rect key="frame" x="166" y="496" width="193" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Donald Trump cooking a pizza wearing a crown" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4kQ-Cl-mWA">
+                                <rect key="frame" x="104.5" y="497.5" width="254.5" height="23"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="0.8991687894" green="0.4453117251" blue="0.501722157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wdt-tr-Sk2">
-                                <rect key="frame" x="81" y="68" width="212" height="304"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wdt-tr-Sk2">
+                                <rect key="frame" x="91" y="55" width="194" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wdt-tr-Sk2" secondAttribute="height" multiplier="5:7" id="FM1-iJ-RcF"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ff-ZK-XaB">
-                                <rect key="frame" x="41" y="68" width="294" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ff-ZK-XaB">
+                                <rect key="frame" x="111" y="40" width="154.5" height="67"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="58"/>
                                 <color key="textColor" red="0.0015208716970000001" green="0.53561641989999997" blue="0.002359770915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -929,9 +940,44 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="vls-7c-UTk" secondAttribute="trailing" id="hPU-42-cep"/>
-                            <constraint firstItem="F2s-BT-xw8" firstAttribute="top" secondItem="vls-7c-UTk" secondAttribute="bottom" constant="30" id="le8-EW-xb0"/>
-                            <constraint firstItem="vls-7c-UTk" firstAttribute="leading" secondItem="l6E-bN-P7O" secondAttribute="leading" id="sYn-Kg-CXe"/>
+                            <constraint firstItem="EbI-gY-7VQ" firstAttribute="top" secondItem="c1s-7t-eTD" secondAttribute="bottom" constant="20" id="1Hi-vt-vSz"/>
+                            <constraint firstItem="6Wu-iC-ebG" firstAttribute="top" secondItem="NUV-s1-GA9" secondAttribute="bottom" constant="12" id="2EE-XP-fSc"/>
+                            <constraint firstItem="F2s-BT-xw8" firstAttribute="top" secondItem="jDd-mY-PVa" secondAttribute="bottom" constant="82.5" id="3mk-WQ-yCi"/>
+                            <constraint firstItem="F2s-BT-xw8" firstAttribute="top" secondItem="vls-7c-UTk" secondAttribute="bottom" constant="30" id="6iU-2H-tfj"/>
+                            <constraint firstItem="hIR-Ij-k0y" firstAttribute="centerX" secondItem="l6E-bN-P7O" secondAttribute="centerX" id="CgZ-Sb-Edi"/>
+                            <constraint firstItem="hIR-Ij-k0y" firstAttribute="top" secondItem="BVw-fj-Jde" secondAttribute="bottom" constant="13" id="Eh9-M3-omP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XQV-Xx-c0y" secondAttribute="trailing" id="HZH-pW-Klw"/>
+                            <constraint firstItem="F2s-BT-xw8" firstAttribute="top" secondItem="VuH-KR-s77" secondAttribute="bottom" id="LYg-2e-byS"/>
+                            <constraint firstItem="0Ff-ZK-XaB" firstAttribute="top" secondItem="Wdt-tr-Sk2" secondAttribute="top" constant="-15" id="Nqn-pn-hqi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ftz-dg-snF" secondAttribute="trailing" id="O4e-hj-oNA"/>
+                            <constraint firstItem="BVw-fj-Jde" firstAttribute="bottom" secondItem="Wdt-tr-Sk2" secondAttribute="bottom" id="PUa-oL-7lX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4kQ-Cl-mWA" secondAttribute="trailing" id="PjU-aO-VeL"/>
+                            <constraint firstItem="Cmx-n1-mQg" firstAttribute="centerX" secondItem="l6E-bN-P7O" secondAttribute="centerX" id="R87-rL-dDJ"/>
+                            <constraint firstItem="4kQ-Cl-mWA" firstAttribute="bottom" secondItem="jDd-mY-PVa" secondAttribute="bottom" id="ShY-PJ-DVP"/>
+                            <constraint firstItem="0Ff-ZK-XaB" firstAttribute="centerX" secondItem="l6E-bN-P7O" secondAttribute="centerX" id="U7P-Pt-uig"/>
+                            <constraint firstItem="Ftz-dg-snF" firstAttribute="leading" secondItem="jDd-mY-PVa" secondAttribute="trailing" constant="10" id="VfN-9B-cnZ"/>
+                            <constraint firstItem="Zec-de-Qcz" firstAttribute="height" secondItem="VuH-KR-s77" secondAttribute="height" id="WbT-Gx-rly"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VuH-KR-s77" secondAttribute="trailing" id="Xy3-6e-gU6"/>
+                            <constraint firstAttribute="trailing" secondItem="vls-7c-UTk" secondAttribute="trailing" id="ZbH-85-beg"/>
+                            <constraint firstItem="4kQ-Cl-mWA" firstAttribute="top" secondItem="Ftz-dg-snF" secondAttribute="bottom" constant="4" id="aZr-yJ-Kx3"/>
+                            <constraint firstItem="Wdt-tr-Sk2" firstAttribute="top" secondItem="Cmx-n1-mQg" secondAttribute="bottom" constant="8" id="cvM-kb-4bX"/>
+                            <constraint firstItem="Ftz-dg-snF" firstAttribute="top" secondItem="XQV-Xx-c0y" secondAttribute="bottom" constant="4" id="eTh-k9-3SE"/>
+                            <constraint firstItem="jDd-mY-PVa" firstAttribute="leading" secondItem="l6E-bN-P7O" secondAttribute="leadingMargin" constant="25" id="fzr-sB-UKB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Zec-de-Qcz" secondAttribute="leading" id="gOV-6F-Lxo"/>
+                            <constraint firstItem="4kQ-Cl-mWA" firstAttribute="leading" secondItem="jDd-mY-PVa" secondAttribute="trailing" constant="10" id="hgU-Zz-6Ca"/>
+                            <constraint firstItem="vls-7c-UTk" firstAttribute="leading" secondItem="l6E-bN-P7O" secondAttribute="leading" id="iB9-O4-eZf"/>
+                            <constraint firstItem="Wdt-tr-Sk2" firstAttribute="leading" secondItem="l6E-bN-P7O" secondAttribute="leadingMargin" constant="75" id="iVX-Vi-rrf"/>
+                            <constraint firstItem="Wdt-tr-Sk2" firstAttribute="centerX" secondItem="l6E-bN-P7O" secondAttribute="centerX" id="jBT-jx-tjC"/>
+                            <constraint firstItem="XQV-Xx-c0y" firstAttribute="leading" secondItem="jDd-mY-PVa" secondAttribute="trailing" constant="10" id="jbq-ML-v3M"/>
+                            <constraint firstItem="XQV-Xx-c0y" firstAttribute="top" secondItem="jDd-mY-PVa" secondAttribute="top" id="lto-uc-LAe"/>
+                            <constraint firstItem="Cmx-n1-mQg" firstAttribute="top" secondItem="c1s-7t-eTD" secondAttribute="bottom" constant="8" id="pmE-d9-J1b"/>
+                            <constraint firstItem="NUV-s1-GA9" firstAttribute="centerX" secondItem="l6E-bN-P7O" secondAttribute="centerX" id="tnN-ku-Ffi"/>
+                            <constraint firstItem="BVw-fj-Jde" firstAttribute="centerX" secondItem="l6E-bN-P7O" secondAttribute="centerX" id="uWG-w0-igj"/>
+                            <constraint firstItem="F2s-BT-xw8" firstAttribute="top" secondItem="Zec-de-Qcz" secondAttribute="bottom" id="wEx-cC-ZAq"/>
+                            <constraint firstItem="Ftz-dg-snF" firstAttribute="centerY" secondItem="jDd-mY-PVa" secondAttribute="centerY" id="x6A-n2-fgk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EbI-gY-7VQ" secondAttribute="trailing" id="xU3-HN-fnK"/>
+                            <constraint firstItem="BVw-fj-Jde" firstAttribute="top" secondItem="6Wu-iC-ebG" secondAttribute="bottom" constant="12" id="xcx-Gu-tQ7"/>
+                            <constraint firstItem="6Wu-iC-ebG" firstAttribute="centerX" secondItem="l6E-bN-P7O" secondAttribute="centerX" id="z6Q-hU-qT6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Recall Test" id="JiI-QE-7bN">
@@ -4402,128 +4448,125 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgu-jJ-r8W">
-                                <rect key="frame" x="62" y="23" width="252" height="559"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallDefault" translatesAutoresizingMaskIntoConstraints="NO" id="akj-Zy-Y9x">
+                                <rect key="frame" x="132" y="20" width="110" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="109" id="010-6C-g2W"/>
+                                    <constraint firstAttribute="width" secondItem="akj-Zy-Y9x" secondAttribute="height" multiplier="110:109" id="QiH-Gc-hfY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="mLs-mA-FRk"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BAk-G7-z63">
+                                <rect key="frame" x="81" y="438" width="212" height="104"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lJB-69-lGX">
-                                        <rect key="frame" x="20" y="20.5" width="212" height="518"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallDefault" translatesAutoresizingMaskIntoConstraints="NO" id="akj-Zy-Y9x">
-                                                <rect key="frame" x="46" y="0.0" width="120" height="118"/>
-                                            </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-6V-rhb">
-                                                <rect key="frame" x="10" y="148" width="192" height="103.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wo-HP-fP6">
-                                                        <rect key="frame" x="73" y="0.0" width="46.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Who are you thinking of?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88B-HB-TnR">
-                                                        <rect key="frame" x="0.0" y="30.5" width="192" height="30"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <color key="textColor" red="0.053015910089015961" green="0.020820105448365211" blue="0.080279745161533356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
-                                                    </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y5-gR-VBT">
-                                                        <rect key="frame" x="42.5" y="70.5" width="107" height="33"/>
-                                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
-                                                        <state key="normal" title="Randomize">
-                                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="randomizePerson:" destination="DxK-Qp-S7R" eventType="touchUpInside" id="Kia-BC-4z3"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DU6-U9-GXu">
-                                                <rect key="frame" x="22" y="281.5" width="168" height="103.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIi-Vs-sfr">
-                                                        <rect key="frame" x="62" y="0.0" width="44.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What are they doing?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6v-6B-Pe6">
-                                                        <rect key="frame" x="0.5" y="30.5" width="167.5" height="30"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <color key="textColor" red="0.053015910089015961" green="0.020820105448365211" blue="0.080279745161533356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
-                                                    </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6K-dY-QVZ">
-                                                        <rect key="frame" x="30.5" y="70.5" width="107" height="33"/>
-                                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
-                                                        <state key="normal" title="Randomize">
-                                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="randomizeAction:" destination="DxK-Qp-S7R" eventType="touchUpInside" id="4or-bT-4gQ"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BAk-G7-z63">
-                                                <rect key="frame" x="0.0" y="415" width="212" height="103"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxW-0H-Xgn">
-                                                        <rect key="frame" x="82.5" y="0.0" width="47" height="21"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="21" id="xh0-Sv-SkC"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What are they doing it with?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GCs-c2-E3V">
-                                                        <rect key="frame" x="0.0" y="31" width="212" height="30"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="7ZG-Yr-ccB"/>
-                                                        </constraints>
-                                                        <color key="textColor" red="0.053015910089015961" green="0.020820105448365211" blue="0.080279745161533356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
-                                                    </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hG-bJ-e6H">
-                                                        <rect key="frame" x="52.5" y="71" width="107" height="32"/>
-                                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
-                                                        <state key="normal" title="Randomize">
-                                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="randomizeObject:" destination="DxK-Qp-S7R" eventType="touchUpInside" id="qMX-qG-IRY"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxW-0H-Xgn">
+                                        <rect key="frame" x="82.5" y="0.0" width="47" height="21"/>
                                         <constraints>
-                                            <constraint firstItem="DU6-U9-GXu" firstAttribute="leading" secondItem="lJB-69-lGX" secondAttribute="leading" constant="22" id="C2H-k5-8un"/>
-                                            <constraint firstAttribute="bottom" secondItem="DU6-U9-GXu" secondAttribute="bottom" constant="133" id="KDi-1X-IT5"/>
-                                            <constraint firstItem="f7o-6V-rhb" firstAttribute="leading" secondItem="lJB-69-lGX" secondAttribute="leading" constant="10" id="uhb-yf-QVz"/>
+                                            <constraint firstAttribute="height" constant="21" id="xh0-Sv-SkC"/>
                                         </constraints>
-                                    </stackView>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What are they doing it with?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GCs-c2-E3V">
+                                        <rect key="frame" x="0.0" y="31" width="212" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7ZG-Yr-ccB"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.053015910089015961" green="0.020820105448365211" blue="0.080279745161533356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hG-bJ-e6H">
+                                        <rect key="frame" x="52.5" y="71" width="107" height="33"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                        <state key="normal" title="Randomize">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="randomizeObject:" destination="DxK-Qp-S7R" eventType="touchUpInside" id="qMX-qG-IRY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-6V-rhb">
+                                <rect key="frame" x="91" y="161" width="193" height="103.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wo-HP-fP6">
+                                        <rect key="frame" x="73.5" y="0.0" width="46.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Who are you thinking of?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88B-HB-TnR">
+                                        <rect key="frame" x="0.0" y="30.5" width="193" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.053015910089015961" green="0.020820105448365211" blue="0.080279745161533356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y5-gR-VBT">
+                                        <rect key="frame" x="43" y="70.5" width="107" height="33"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                        <state key="normal" title="Randomize">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="randomizePerson:" destination="DxK-Qp-S7R" eventType="touchUpInside" id="Kia-BC-4z3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="lJB-69-lGX" firstAttribute="leading" secondItem="Dgu-jJ-r8W" secondAttribute="leading" constant="20" id="1LU-cy-DQi"/>
-                                    <constraint firstAttribute="trailing" secondItem="lJB-69-lGX" secondAttribute="trailing" constant="20" id="Brz-vd-aCp"/>
-                                    <constraint firstItem="lJB-69-lGX" firstAttribute="centerY" secondItem="Dgu-jJ-r8W" secondAttribute="centerY" id="ITx-eP-0sx"/>
-                                    <constraint firstAttribute="bottom" secondItem="lJB-69-lGX" secondAttribute="bottom" constant="20" id="dT3-4Z-MDG"/>
-                                    <constraint firstItem="lJB-69-lGX" firstAttribute="centerX" secondItem="Dgu-jJ-r8W" secondAttribute="centerX" id="q2y-nf-T5u"/>
+                                    <constraint firstAttribute="width" secondItem="f7o-6V-rhb" secondAttribute="height" multiplier="193:103" id="aSK-rQ-ifg"/>
                                 </constraints>
-                            </scrollView>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DU6-U9-GXu">
+                                <rect key="frame" x="104" y="299.5" width="167.5" height="103.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIi-Vs-sfr">
+                                        <rect key="frame" x="61.5" y="0.0" width="44.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What are they doing?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6v-6B-Pe6">
+                                        <rect key="frame" x="0.0" y="30.5" width="167.5" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.053015910089015961" green="0.020820105448365211" blue="0.080279745161533356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6K-dY-QVZ">
+                                        <rect key="frame" x="7" y="70.5" width="153.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                        <state key="normal" title="Randomize">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="randomizeAction:" destination="DxK-Qp-S7R" eventType="touchUpInside" id="4or-bT-4gQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.8991687894" green="0.4453117251" blue="0.501722157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hfb-bd-2uv" firstAttribute="top" secondItem="Dgu-jJ-r8W" secondAttribute="bottom" constant="21" id="2hl-uq-gbo"/>
-                            <constraint firstItem="Dgu-jJ-r8W" firstAttribute="centerX" secondItem="fbI-1z-IVH" secondAttribute="centerX" id="NtN-xe-7hW"/>
-                            <constraint firstItem="Dgu-jJ-r8W" firstAttribute="leading" secondItem="fbI-1z-IVH" secondAttribute="leadingMargin" constant="46" id="dZ6-ls-tcB"/>
-                            <constraint firstItem="Dgu-jJ-r8W" firstAttribute="top" secondItem="G1U-lo-CK7" secondAttribute="bottom" constant="23" id="jsm-2G-pZm"/>
+                            <constraint firstItem="BAk-G7-z63" firstAttribute="leading" secondItem="fbI-1z-IVH" secondAttribute="leadingMargin" constant="65" id="4Mg-Id-Irp"/>
+                            <constraint firstItem="DU6-U9-GXu" firstAttribute="leading" secondItem="fbI-1z-IVH" secondAttribute="leadingMargin" constant="88" id="DWK-Kv-3AH"/>
+                            <constraint firstItem="f7o-6V-rhb" firstAttribute="leading" secondItem="fbI-1z-IVH" secondAttribute="leadingMargin" constant="75" id="E0t-Jn-mLZ"/>
+                            <constraint firstItem="H6K-dY-QVZ" firstAttribute="width" secondItem="8hG-bJ-e6H" secondAttribute="height" multiplier="107:23" id="FNl-Gl-3r0"/>
+                            <constraint firstItem="BAk-G7-z63" firstAttribute="centerX" secondItem="fbI-1z-IVH" secondAttribute="centerX" id="Km9-Sb-H7B"/>
+                            <constraint firstItem="DU6-U9-GXu" firstAttribute="centerX" secondItem="fbI-1z-IVH" secondAttribute="centerX" id="NmI-MB-ej1"/>
+                            <constraint firstItem="akj-Zy-Y9x" firstAttribute="centerX" secondItem="fbI-1z-IVH" secondAttribute="centerX" id="cvP-Eq-FID"/>
+                            <constraint firstItem="88B-HB-TnR" firstAttribute="height" secondItem="M6v-6B-Pe6" secondAttribute="height" id="dhw-XI-az8"/>
+                            <constraint firstItem="f7o-6V-rhb" firstAttribute="centerX" secondItem="fbI-1z-IVH" secondAttribute="centerX" id="eUi-6I-uqZ"/>
+                            <constraint firstItem="akj-Zy-Y9x" firstAttribute="leading" secondItem="fbI-1z-IVH" secondAttribute="leadingMargin" constant="116" id="g5T-sB-csX"/>
+                            <constraint firstItem="akj-Zy-Y9x" firstAttribute="top" secondItem="G1U-lo-CK7" secondAttribute="bottom" constant="20" id="lhc-gq-hS6"/>
+                            <constraint firstItem="M6v-6B-Pe6" firstAttribute="height" secondItem="GCs-c2-E3V" secondAttribute="height" id="lz0-a2-rW4"/>
+                            <constraint firstItem="f7o-6V-rhb" firstAttribute="top" secondItem="akj-Zy-Y9x" secondAttribute="bottom" constant="32" id="oQk-mh-Ekz"/>
+                            <constraint firstItem="BAk-G7-z63" firstAttribute="top" secondItem="DU6-U9-GXu" secondAttribute="bottom" constant="35" id="qyD-cu-ysP"/>
+                            <constraint firstItem="DU6-U9-GXu" firstAttribute="top" secondItem="f7o-6V-rhb" secondAttribute="bottom" constant="35" id="r4s-2L-S1W"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Card" id="vAN-bC-34t">
@@ -4544,13 +4587,12 @@
                         <outlet property="objectTextField" destination="GCs-c2-E3V" id="H5T-6a-m9q"/>
                         <outlet property="personTextField" destination="88B-HB-TnR" id="xnR-9X-P9T"/>
                         <outlet property="saveButton" destination="Fk8-Tr-swQ" id="B8o-JS-pkj"/>
-                        <outlet property="scrolly" destination="Dgu-jJ-r8W" id="6mc-ZF-ZZy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbk-Mt-aPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="qtE-VD-uIA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="8020" y="-1416"/>
+            <point key="canvasLocation" x="8020" y="-1416.3418290854574"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="S64-jr-bB3">

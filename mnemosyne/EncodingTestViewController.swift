@@ -84,6 +84,7 @@ class EncodingTestViewController: UIViewController, UIPickerViewDelegate,
             }
             
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
