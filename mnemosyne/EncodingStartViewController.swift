@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class EncodingStartViewController: UIViewController {
     
@@ -61,7 +62,10 @@ class EncodingStartViewController: UIViewController {
 , for: .normal)
         let numSuits = (spades.isOn ?1:0)+(clubs.isOn ?1:0)+(hearts.isOn ?1:0)+(diamonds.isOn ?1:0)
         let maxSeconds = 240 * numSuits
-        let chosenSeconds = Int(0.5 * Float(maxSeconds))
+        let value: Float = slider.value
+        let chosenSeconds = Int(value * Float(maxSeconds))
+        
+        
         totalTime.text = String(format: "%02d", chosenSeconds / 60) + ":" + String(format: "%02d",chosenSeconds % 60 - ((chosenSeconds % 60) % 15))
     }
     
@@ -162,6 +166,7 @@ class EncodingStartViewController: UIViewController {
         diamondsLabel.text = "Diamonds"
         heartsLabel.text = "Hearts"
         clubsLabel.text = "Clubs"
+        SKStoreReviewController.requestReview()
     }
     
 }

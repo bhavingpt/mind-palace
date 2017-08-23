@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class RecallStartViewController: UIViewController {
     
@@ -117,6 +118,7 @@ class RecallStartViewController: UIViewController {
         diamondsLabel.text = "Diamonds"
         heartsLabel.text = "Hearts"
         clubsLabel.text = "Clubs"
+        SKStoreReviewController.requestReview()
     }
 
 }
